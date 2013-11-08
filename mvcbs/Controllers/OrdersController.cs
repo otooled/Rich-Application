@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace mvcbs.Controllers
 {
-    public class HomeController : Controller
+    public class OrdersController : Controller
     {
         //make database connection
         private MvcMusicStoreEntities db = new MvcMusicStoreEntities();
@@ -16,41 +16,42 @@ namespace mvcbs.Controllers
             db.Dispose();
         }
         //
-        // GET: /Home/
+        // GET: /Default1/
 
-        public ActionResult Index(string searchTerm)
+        public ActionResult Index(int id = 0)
         {
-            var q1 = from o in db.Orders
-                     where searchTerm == null || o.LastName.Contains(searchTerm)
-                     select o;
-            
-            return View(q1);
+            var alList = db.Albums.SingleOrDefault(alb => alb.AlbumId == id);
+            if (alList != null)
+            {
+                return View(new List<Album> {alList});
+            }
+            return View(db.Albums);
         }
 
         //
-        // GET: /Home/Details/5
+        
 
-        public ActionResult SortSize()
+        public ActionResult OrderIndex(int id)
         {
-            var q3 = from o in db.Orders
-                     orderby o.Total descending
-                     select o;
-            return View(q3);
+            var selectOrder = db.OrderDetails.SingleOrDefault(ord => ord.OrderId == id);
+            if(selectOrder != null)
+            {
+                ViewBag.
+
+            }
+            return View();
         }
 
         //
-        // GET: /Home/Create
+        // GET: /Default1/Create
 
-        public ActionResult SortDate()
+        public ActionResult Create()
         {
-            var q2 = from od in db.Orders
-                     orderby od.OrderDate descending
-                     select od;
-            return View(q2);
+            return View();
         }
 
         //
-        // POST: /Home/Create
+        // POST: /Default1/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -68,7 +69,7 @@ namespace mvcbs.Controllers
         }
 
         //
-        // GET: /Home/Edit/5
+        // GET: /Default1/Edit/5
 
         public ActionResult Edit(int id)
         {
@@ -76,7 +77,7 @@ namespace mvcbs.Controllers
         }
 
         //
-        // POST: /Home/Edit/5
+        // POST: /Default1/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -94,7 +95,7 @@ namespace mvcbs.Controllers
         }
 
         //
-        // GET: /Home/Delete/5
+        // GET: /Default1/Delete/5
 
         public ActionResult Delete(int id)
         {
@@ -102,7 +103,7 @@ namespace mvcbs.Controllers
         }
 
         //
-        // POST: /Home/Delete/5
+        // POST: /Default1/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)

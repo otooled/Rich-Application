@@ -1,4 +1,15 @@
 ﻿<RecentFiles>
-  <RecentFiles />
-  <RecentEdits />
+  <RecentFiles>
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Orders/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortDate.cshtml" caret="145" fromTop="9" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortSize.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="306" fromTop="11" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrdersController.cs" caret="1119" fromTop="20" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="64" fromTop="3" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="306" fromTop="11" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrdersController.cs" caret="1119" fromTop="20" />
+  </RecentEdits>
 </RecentFiles>
