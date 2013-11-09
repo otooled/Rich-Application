@@ -132,8 +132,8 @@
     <Compile Include="Cart.cs">
       <DependentUpon>MusicDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="C__MigrationHistory.cs">
       <DependentUpon>MusicDB.tt</DependentUpon>
     </Compile>
@@ -283,8 +283,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\SortDate.cshtml" />
     <Content Include="Views\Home\SortSize.cshtml" />
-    <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\Order\Albums.cshtml" />
+    <Content Include="Views\Order\OrderedAlbums.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

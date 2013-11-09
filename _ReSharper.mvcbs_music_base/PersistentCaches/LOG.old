@@ -1,5 +1,5 @@
-2013/11/08-21:36:23.563 bcc Recovering log #15
-2013/11/08-21:36:23.563 bcc Level-0 table #17: started
-2013/11/08-21:36:23.572 bcc Level-0 table #17: 16500 bytes OK
-2013/11/08-21:36:23.582 bcc Delete type=0 #15
-2013/11/08-21:36:23.582 bcc Delete type=3 #13
+2013/11/09-20:44:41.576 36b8 Recovering log #34
+2013/11/09-20:44:41.576 36b8 Level-0 table #37: started
+2013/11/09-20:44:41.585 36b8 Level-0 table #37: 8624 bytes OK
+2013/11/09-20:44:41.593 36b8 Delete type=0 #34
+2013/11/09-20:44:41.594 36b8 Delete type=3 #32

@@ -7,7 +7,7 @@
 <h2 class="text-center text-info ">List of Orders</h2>
 
 <p>
-    @Html.ActionLink("Sort Order by Date", "SortDate")
+    @Html.ActionLink("Sort Order by Date", "SortDate", new {@class="btn btn-info btn-xs"})
     @Html.ActionLink("Sort Order by value", "SortSize")
 </p>
 <table class="col-md-12 table-striped table-bordered">
@@ -90,9 +90,7 @@
                 @Html.DisplayFor(modelItem => item.Total)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.OrderId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.OrderId }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.OrderId })
+                 @Html.ActionLink("Ordered Albums", "IndexOrder", new { id=item.OrderId }) 
             </td>
         </tr>
     }

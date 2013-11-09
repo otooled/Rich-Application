@@ -58,3 +58,7 @@ C:\Users\David\Desktop\RA\mvcbs\bin\System.Web.WebPages.Razor.xml
 C:\Users\David\Desktop\RA\mvcbs\obj\Debug\mvcbs_music_base.csprojResolveAssemblyReference.cache
 C:\Users\David\Desktop\RA\mvcbs\obj\Debug\mvcbs.dll
 C:\Users\David\Desktop\RA\mvcbs\obj\Debug\mvcbs.pdb
+C:\Users\David\Desktop\RA\mvcbs\bin\EntityFramework.dll
+C:\Users\David\Desktop\RA\mvcbs\bin\EntityFramework.SqlServer.dll
+C:\Users\David\Desktop\RA\mvcbs\bin\EntityFramework.xml
+C:\Users\David\Desktop\RA\mvcbs\bin\EntityFramework.SqlServer.xml
