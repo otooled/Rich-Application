@@ -90,7 +90,7 @@
                 @Html.DisplayFor(modelItem => item.Total)
             </td>
             <td>
-                 @Html.ActionLink("Ordered Albums", "IndexOrder", new { id=item.OrderId }) 
+                 @Html.ActionLink("Ordered Albums", "IndexOrder","Order", new { id=item.OrderId }, null) 
             </td>
         </tr>
     }

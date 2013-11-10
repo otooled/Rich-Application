@@ -32,16 +32,16 @@ namespace mvcbs.Controllers
 
         public ActionResult IndexOrder(int id)
         {
-            var selectOrd = db.OrderDetails.SingleOrDefault(ord => ord.OrderId == id);
+            var selectOrd = db.OrderDetails.FirstOrDefault(ord => ord.OrderId == id);
 
-            if(selectOrd != null)
+            if (selectOrd != null)
             {
                 ViewBag.Message = String.Format("Albums for <span class='strong text-info'>{0}</span>", selectOrd.OrderId);
                 return View("OrderedAlbums", selectOrd);
             }
-                ViewBag.Message = "No albums listed with this order";
-            
-            
+            ViewBag.Message = "No albums listed with this order";
+
+
             return RedirectToAction("Index");
         }
 

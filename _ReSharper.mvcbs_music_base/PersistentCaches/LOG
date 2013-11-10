@@ -1,5 +1,5 @@
-2013/11/09-20:54:01.914 21c4 Recovering log #38
-2013/11/09-20:54:01.914 21c4 Level-0 table #40: started
-2013/11/09-20:54:01.943 21c4 Level-0 table #40: 3997 bytes OK
-2013/11/09-20:54:01.954 21c4 Delete type=0 #38
-2013/11/09-20:54:01.955 21c4 Delete type=3 #36
+2013/11/10-19:56:57.453 19cc Recovering log #47
+2013/11/10-19:56:57.453 19cc Level-0 table #50: started
+2013/11/10-19:56:57.462 19cc Level-0 table #50: 2893 bytes OK
+2013/11/10-19:56:57.470 19cc Delete type=0 #47
+2013/11/10-19:56:57.470 19cc Delete type=3 #45
