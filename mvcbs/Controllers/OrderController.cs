@@ -32,19 +32,25 @@ namespace mvcbs.Controllers
 
         public ActionResult IndexOrder(int id)
         {
-            var selectOrd = db.OrderDetails.FirstOrDefault(ord => ord.OrderId == id);
+           
+            var q = from a in db.Albums
+                    join oid in db.OrderDetails on a.AlbumId equals oid.AlbumId
+                    where oid.OrderId == id
+                    select a;
 
-            if (selectOrd != null)
-            {
-                ViewBag.Message = String.Format("Albums for <span class='strong text-info'>{0}</span>", selectOrd.OrderId);
-                return View("OrderedAlbums", selectOrd);
-            }
-            ViewBag.Message = "No albums listed with this order";
-
-
-            return RedirectToAction("Index");
+            ViewBag.Message = String.Format("Albums for <span class='strong text-info'>{0}</span>", id);
+            return View("Albums", q);
+            
         }
 
+        public ActionResult ViewArtist(int id)
+        {
+            var qA = from a in db.Artists
+                     join aid in db.Albums on a.ArtistId equals aid.ArtistId
+                     where aid.AlbumId == id
+                     select a;
+            return View("ViewArtist", qA);
+        }
         public ActionResult Details(int id)
         {
             return View();

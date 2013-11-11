@@ -7,12 +7,12 @@
 <h2 class="text-center text-info ">List of Orders</h2>
 
 <p>
-    @Html.ActionLink("Sort Order by Date", "SortDate", new {@class="btn btn-info btn-xs"})
-    @Html.ActionLink("Sort Order by value", "SortSize")
+    @Html.ActionLink("Sort Order by Date", "SortDate", null, new {@class="btn btn-danger btn-sm"})
+    @Html.ActionLink("Sort Order by value", "SortSize" ,null, new {@class="btn btn-danger btn-sm"})
 </p>
 <table class="col-md-12 table-striped table-bordered">
     <tr>
-        <th>
+        <th >
             @Html.DisplayNameFor(model => model.OrderDate)
         </th>
         <th>
@@ -90,7 +90,7 @@
                 @Html.DisplayFor(modelItem => item.Total)
             </td>
             <td>
-                 @Html.ActionLink("Ordered Albums", "IndexOrder","Order", new { id=item.OrderId }, null) 
+                 @Html.ActionLink("Ordered Albums", "IndexOrder","Order", new { id=item.OrderId }, new {@class="btn btn-danger btn-sm"}) 
             </td>
         </tr>
     }
@@ -98,7 +98,7 @@
 </table>
 <p></p>
 <form class="col-md-4" method="get">
-    <input class="form-control" type="text" name="searchTerm" placeholder="Search for Order by last name"/>
+    <input class="form-control" type="text" name="searchTerm" placeholder="Search order by last name"/>
     <p></p>
     <input type="submit" class="btn btn-info" value="Search for Order" />
 </form>

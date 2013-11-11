@@ -87,10 +87,8 @@
             @Html.DisplayFor(modelItem => item.Total)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OrderId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OrderId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OrderId })
-        </td>
+            @Html.ActionLink("Ordered Albums", "IndexOrder","Order", new { id=item.OrderId }, new {@class="btn btn-danger btn-sm"})
+           
     </tr>
 }
 

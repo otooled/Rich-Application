@@ -4,15 +4,15 @@
     ViewBag.Title = "Albums";
 }
 
-<h2>Albums</h2>
+<h2 class=" text-info ">Albums</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+   
 </p>
-<table class="col-md-12 table-striped table-bordered">
+<table class="col-md-3 table-striped table-bordered">
     <tr>
        
-        <th>
+        <th class="text-danger">
             @Html.DisplayNameFor(model => model.Title)
         </th>
        
@@ -26,9 +26,11 @@
             @Html.DisplayFor(modelItem => item.Title)
        
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AlbumId }) |
+            @Html.ActionLink("View Artist", "ViewArtist", "Order", new { id=item.AlbumId }, new {@class = "btn btn-success btn-sm"})
+
+           @* @Html.ActionLink("Edit", "Edit", new { id=item.AlbumId }) |
             @Html.ActionLink("Details", "Details", new { id=item.AlbumId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AlbumId })
+            @Html.ActionLink("Delete", "Delete", new { id=item.AlbumId })*@
         </td>
     </tr>
 }

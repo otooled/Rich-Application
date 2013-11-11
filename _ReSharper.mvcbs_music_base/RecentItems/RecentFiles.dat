@@ -1,20 +1,29 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortDate.cshtml" caret="145" fromTop="9" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortSize.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Albums/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Albums/f:AlbumsArtist.cshtml" caret="0" fromTop="0" />
     <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Index.cshtml" caret="0" fromTop="0" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="870" fromTop="17" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="2736" fromTop="20" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrderController.cs" caret="737" fromTop="9" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Albums.cshtml" caret="0" fromTop="0" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:OrderedAlbums.cshtml" caret="123" fromTop="8" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrderController.cs" caret="1032" fromTop="20" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Albums/f:Albums.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Shared/f:_Layout.cshtml" caret="4174" fromTop="22" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:orderDetails.cshtml" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Albums.cshtml" caret="86" fromTop="6" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortSize.cshtml" caret="2392" fromTop="24" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="2743" fromTop="85" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:ViewArtist.cshtml" caret="211" fromTop="13" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortDate.cshtml" caret="2508" fromTop="87" />
   </RecentFiles>
   <RecentEdits>
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Index.cshtml" caret="1207" fromTop="21" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="2710" fromTop="16" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Albums.cshtml" caret="204" fromTop="7" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="2736" fromTop="20" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrderController.cs" caret="912" fromTop="15" />
-    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:OrderedAlbums.cshtml" caret="123" fromTop="8" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Index.cshtml" caret="202" fromTop="11" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:OrderController.cs" caret="1550" fromTop="29" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:ViewArtist.cshtml" caret="887" fromTop="22" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Shared/f:_Layout.cshtml" caret="4174" fromTop="22" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Controllers/f:HomeController.cs" caret="630" fromTop="23" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:Index.cshtml" caret="2861" fromTop="9" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Order/f:Albums.cshtml" caret="86" fromTop="6" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortSize.cshtml" caret="2512" fromTop="25" />
+    <File id="9B5BF7A0-8D8E-4BCA-8EBF-790FA10F749B/d:Views/d:Home/f:SortDate.cshtml" caret="2508" fromTop="14" />
   </RecentEdits>
 </RecentFiles>
