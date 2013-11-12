@@ -8,28 +8,10 @@ namespace mvcbs.Controllers
 {
     public class OrderController : Controller
     {
+        //make database connection
         private MvcMusicStoreEntities db = new MvcMusicStoreEntities();
-
-        protected override void Dispose(bool disposing)
-        {
-            db.Dispose();
-        }
-        //
-        // GET: /OrderedAlbums/
-
-        public ActionResult Index(int id = 0)
-        {
-            var albQuery = db.Albums.SingleOrDefault(alb => alb.AlbumId == id);
-            if(albQuery != null)
-            {
-                return View(new List<Album> {albQuery});
-            }
-            return View(db.Albums);
-        }
-
-        //
-        // GET: /OrderedAlbums/Details/5
-
+       
+        // Query that gets the albums that were ordered
         public ActionResult IndexOrder(int id)
         {
            
@@ -37,18 +19,18 @@ namespace mvcbs.Controllers
                     join oid in db.OrderDetails on a.AlbumId equals oid.AlbumId
                     where oid.OrderId == id
                     select a;
-
-            ViewBag.Message = String.Format("Albums for <span class='strong text-info'>{0}</span>", id);
+           
             return View("Albums", q);
-            
         }
 
+        //Query that gets the artist of the album that was ordered
         public ActionResult ViewArtist(int id)
         {
             var qA = from a in db.Artists
                      join aid in db.Albums on a.ArtistId equals aid.ArtistId
                      where aid.AlbumId == id
                      select a;
+
             return View("ViewArtist", qA);
         }
         public ActionResult Details(int id)
@@ -132,6 +114,11 @@ namespace mvcbs.Controllers
             {
                 return View();
             }
+        }
+        //Close connection when done with database
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
         }
     }
 }

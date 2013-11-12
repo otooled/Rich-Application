@@ -286,9 +286,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Order\Index.cshtml" />
     <Content Include="Views\Order\Albums.cshtml" />
-    <Content Include="Views\Albums\Index.cshtml" />
-    <Content Include="Views\Albums\AlbumsArtist.cshtml" />
-    <Content Include="Views\Albums\Albums.cshtml" />
+    <Content Include="Scripts\Albums\Index.cshtml" />
+    <Content Include="Scripts\Albums\AlbumsArtist.cshtml" />
+    <Content Include="Scripts\Albums\Albums.cshtml" />
     <Content Include="Views\Order\orderDetails.cshtml" />
     <Content Include="Views\Order\ViewArtist.cshtml" />
   </ItemGroup>

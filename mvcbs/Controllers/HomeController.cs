@@ -10,13 +10,8 @@ namespace mvcbs.Controllers
     {
         //make database connection
         private MvcMusicStoreEntities db = new MvcMusicStoreEntities();
-
-        protected override void Dispose(bool disposing)
-        {
-            db.Dispose();
-        }
-        //
-        // GET: /Home/
+        
+        //Search query that allows user to search by surname
 
         public ActionResult Index(string searchTerm)
         {
@@ -27,8 +22,7 @@ namespace mvcbs.Controllers
             return View(q1);
         }
 
-        //
-        // GET: /Home/Details/5
+        //Sort query that sorts order list by the value of the order
 
         public ActionResult SortSize()
         {
@@ -38,8 +32,7 @@ namespace mvcbs.Controllers
             return View(q3);
         }
 
-        //
-        // GET: /Home/Create
+        //Sort query that sorts order list by date
 
         public ActionResult SortDate()
         {
@@ -119,6 +112,10 @@ namespace mvcbs.Controllers
             }
         }
 
-       
+        //Close connection when done with database
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+        }
     }
 }
