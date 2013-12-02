@@ -17,8 +17,8 @@ namespace CA2.Controllers
 
         public ActionResult Index()
         {
-            var orders = db.Orders.Include(o => o.Shipper);
-            return View(orders.ToList());
+            var orders = db.Orders.OrderBy(o => o.OrderDate);
+            return View(orders);
         }
 
         //
@@ -34,8 +34,8 @@ namespace CA2.Controllers
         //    return View(order);
         //}
 
-        //
-        // GET: /Home/Create
+        
+        // //GET: /Home/Create
 
         //public ActionResult Create()
         //{
@@ -126,10 +126,10 @@ namespace CA2.Controllers
         //    return RedirectToAction("Index");
         //}
 
-        //protected override void Dispose(bool disposing)
-        //{
-        //    db.Dispose();
-        //    base.Dispose(disposing);
-        //}
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }

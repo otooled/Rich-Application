@@ -9,11 +9,9 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderID)
-        </th>
+<table >
+    <tr class="active">
+        
         <th>
             @Html.DisplayNameFor(model => model.Customer.ContactName)
         </th>
@@ -23,18 +21,11 @@
         <th>
             @Html.DisplayNameFor(model => model.OrderDate)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RequiredDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShippedDate)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.Shipper.CompanyName)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Freight)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.ShipName)
         </th>
@@ -57,10 +48,8 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderID)
-        </td>
+    <tr >
+       
         <td>
             @Html.DisplayFor(modelItem => item.Customer.ContactName)
         </td>
@@ -70,18 +59,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.OrderDate)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RequiredDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShippedDate)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.Shipper.CompanyName)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Freight)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.ShipName)
         </td>
