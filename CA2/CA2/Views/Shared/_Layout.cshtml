@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - David O Toole - CA2</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -10,9 +10,10 @@
     </head>
     <body>
         <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+            <div class="content-wrapper ">
+                <div class="text-center text-danger">
+                    @ViewBag.Title</>
+                    @*<p class="site-title">@Html.ActionLink("CA2 - David O Toole", "Index", "Home")</p>*@
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -37,7 +38,7 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                    <p>&copy; @DateTime.Now.Year - CA2 David O Toole</p>
                 </div>
             </div>
         </footer>
