@@ -20,108 +20,115 @@ namespace CA2.Controllers
             var employees = db.Employees.OrderBy(e => e.EmployeeID);
             return View(employees);
         }
+        public ActionResult empBoss()
+        {
+            var boss = from b in db.Employees
+                       where b.ReportsTo == b.EmployeeID
+                       select b.LastName;
+            return (boss);
+        }
 
         //
-        // GET: /Employee/Details/5
+            // GET: /Employee/Details/5
 
-    //    public ActionResult Details(int id = 0)
-    //    {
-    //        Employee employee = db.Employees.Find(id);
-    //        if (employee == null)
-    //        {
-    //            return HttpNotFound();
-    //        }
-    //        return View(employee);
-    //    }
+            //    public ActionResult Details(int id = 0)
+            //    {
+            //        Employee employee = db.Employees.Find(id);
+            //        if (employee == null)
+            //        {
+            //            return HttpNotFound();
+            //        }
+            //        return View(employee);
+            //    }
 
-    //    //
-    //    // GET: /Employee/Create
+            //    //
+            //    // GET: /Employee/Create
 
-    //    public ActionResult Create()
-    //    {
-    //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName");
-    //        return View();
-    //    }
+            //    public ActionResult Create()
+            //    {
+            //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName");
+            //        return View();
+            //    }
 
-    //    //
-    //    // POST: /Employee/Create
+            //    //
+            //    // POST: /Employee/Create
 
-    //    [HttpPost]
-    //    [ValidateAntiForgeryToken]
-    //    public ActionResult Create(Employee employee)
-    //    {
-    //        if (ModelState.IsValid)
-    //        {
-    //            db.Employees.Add(employee);
-    //            db.SaveChanges();
-    //            return RedirectToAction("Index");
-    //        }
+            //    [HttpPost]
+            //    [ValidateAntiForgeryToken]
+            //    public ActionResult Create(Employee employee)
+            //    {
+            //        if (ModelState.IsValid)
+            //        {
+            //            db.Employees.Add(employee);
+            //            db.SaveChanges();
+            //            return RedirectToAction("Index");
+            //        }
 
-    //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
-    //        return View(employee);
-    //    }
+            //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
+            //        return View(employee);
+            //    }
 
-    //    //
-    //    // GET: /Employee/Edit/5
+            //    //
+            //    // GET: /Employee/Edit/5
 
-    //    public ActionResult Edit(int id = 0)
-    //    {
-    //        Employee employee = db.Employees.Find(id);
-    //        if (employee == null)
-    //        {
-    //            return HttpNotFound();
-    //        }
-    //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
-    //        return View(employee);
-    //    }
+            //    public ActionResult Edit(int id = 0)
+            //    {
+            //        Employee employee = db.Employees.Find(id);
+            //        if (employee == null)
+            //        {
+            //            return HttpNotFound();
+            //        }
+            //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
+            //        return View(employee);
+            //    }
 
-    //    //
-    //    // POST: /Employee/Edit/5
+            //    //
+            //    // POST: /Employee/Edit/5
 
-    //    [HttpPost]
-    //    [ValidateAntiForgeryToken]
-    //    public ActionResult Edit(Employee employee)
-    //    {
-    //        if (ModelState.IsValid)
-    //        {
-    //            db.Entry(employee).State = EntityState.Modified;
-    //            db.SaveChanges();
-    //            return RedirectToAction("Index");
-    //        }
-    //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
-    //        return View(employee);
-    //    }
+            //    [HttpPost]
+            //    [ValidateAntiForgeryToken]
+            //    public ActionResult Edit(Employee employee)
+            //    {
+            //        if (ModelState.IsValid)
+            //        {
+            //            db.Entry(employee).State = EntityState.Modified;
+            //            db.SaveChanges();
+            //            return RedirectToAction("Index");
+            //        }
+            //        ViewBag.ReportsTo = new SelectList(db.Employees, "EmployeeID", "LastName", employee.ReportsTo);
+            //        return View(employee);
+            //    }
 
-    //    //
-    //    // GET: /Employee/Delete/5
+            //    //
+            //    // GET: /Employee/Delete/5
 
-    //    public ActionResult Delete(int id = 0)
-    //    {
-    //        Employee employee = db.Employees.Find(id);
-    //        if (employee == null)
-    //        {
-    //            return HttpNotFound();
-    //        }
-    //        return View(employee);
-    //    }
+            //    public ActionResult Delete(int id = 0)
+            //    {
+            //        Employee employee = db.Employees.Find(id);
+            //        if (employee == null)
+            //        {
+            //            return HttpNotFound();
+            //        }
+            //        return View(employee);
+            //    }
 
-    //    //
-    //    // POST: /Employee/Delete/5
+            //    //
+            //    // POST: /Employee/Delete/5
 
-    //    [HttpPost, ActionName("Delete")]
-    //    [ValidateAntiForgeryToken]
-    //    public ActionResult DeleteConfirmed(int id)
-    //    {
-    //        Employee employee = db.Employees.Find(id);
-    //        db.Employees.Remove(employee);
-    //        db.SaveChanges();
-    //        return RedirectToAction("Index");
-    //    }
+            //    [HttpPost, ActionName("Delete")]
+            //    [ValidateAntiForgeryToken]
+            //    public ActionResult DeleteConfirmed(int id)
+            //    {
+            //        Employee employee = db.Employees.Find(id);
+            //        db.Employees.Remove(employee);
+            //        db.SaveChanges();
+            //        return RedirectToAction("Index");
+            //    }
 
-    //    protected override void Dispose(bool disposing)
-    //    {
-    //        db.Dispose();
-    //        base.Dispose(disposing);
-    //    }
-    }
+            //    protected override void Dispose(bool disposing)
+            //    {
+            //        db.Dispose();
+            //        base.Dispose(disposing);
+            //    }
+        }
 }

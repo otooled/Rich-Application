@@ -1,0 +1,32 @@
+﻿body {
+    
+}
+.scrolling {
+    display:inline-block;
+    height: 50px;
+    width: 200px;
+  overflow-y: scroll;
+}
+.mainTableDiv {
+    width: 920px;
+    margin-left: 50px;
+    cursor: pointer;
+    
+
+    /*clear: both;
+	border: 1px solid #963;
+	height: 400px;
+	overflow: auto;*/
+	
+}
+.tableHead {
+    width: 100px;
+    position: relative;
+    top: auto;
+}
+.empDetails {
+    position: absolute;
+
+   top: 200px;
+    right: 200px;
+}

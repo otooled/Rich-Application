@@ -21,7 +21,14 @@ namespace CA2.Controllers
             var orders = db.Orders.OrderBy(o => o.OrderDate);
             return View(orders);
         }
+        public  ActionResult EmpDetails(int id)
+        {
+            var details = from eDets in db.Employees
+                          where eDets.EmployeeID == id
+                          select eDets;
 
+            return PartialView("_EmpDetails", details);
+        }
         //
         // GET: /Home/Details/5
 
