@@ -20,13 +20,13 @@ namespace CA2.Controllers
             var employees = db.Employees.OrderBy(e => e.EmployeeID);
             return View(employees);
         }
-        public ActionResult empBoss()
-        {
-            var boss = from b in db.Employees
-                       where b.ReportsTo == b.EmployeeID
-                       select b.LastName;
-            return (boss);
-        }
+        //public ActionResult empBoss()
+        //{
+        //    var boss = from b in db.Employees
+        //               where b.ReportsTo == b.EmployeeID
+        //               select b.LastName;
+        //    return (boss);
+        //}
 
         //
             // GET: /Employee/Details/5

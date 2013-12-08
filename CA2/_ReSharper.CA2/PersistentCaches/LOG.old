@@ -1,5 +1,5 @@
-2013/12/04-14:05:27.690 e4c Recovering log #41
-2013/12/04-14:05:27.690 e4c Level-0 table #43: started
-2013/12/04-14:05:27.696 e4c Level-0 table #43: 20561 bytes OK
-2013/12/04-14:05:27.739 e4c Delete type=0 #41
-2013/12/04-14:05:27.739 e4c Delete type=3 #39
+2013/12/08-10:12:08.440 ae8 Recovering log #51
+2013/12/08-10:12:08.441 ae8 Level-0 table #53: started
+2013/12/08-10:12:08.447 ae8 Level-0 table #53: 28632 bytes OK
+2013/12/08-10:12:08.553 ae8 Delete type=0 #51
+2013/12/08-10:12:08.556 ae8 Delete type=3 #49

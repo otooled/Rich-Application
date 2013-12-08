@@ -12,19 +12,20 @@
         <header>
             <div class="content-wrapper ">
                 <div class="text-center text-danger">
-                    @ViewBag.Title</>
+                   
                     @*<p class="site-title">@Html.ActionLink("CA2 - David O Toole", "Index", "Home")</p>*@
                 </div>
                 <div class="float-right">
                     <section id="login">
-                        @Html.Partial("_LoginPartial")
+                        @*@Html.Partial("_LoginPartial")*@
                     </section>
                     <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
+                       <div class="jumbotron">
+            <div class="heading">
+                @RenderSection("featured", required: false)
+               @ViewBag.Title</>
+            </div>
+        </div>
                     </nav>
                 </div>
             </div>
@@ -42,6 +43,8 @@
                 </div>
             </div>
         </footer>
+        
+        
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/jqueryval")

@@ -83,8 +83,9 @@ namespace CA2.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
+            //ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
             ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", order.EmployeeID);
+            
             ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName", order.ShipVia);
             return View(order);
         }
@@ -102,7 +103,7 @@ namespace CA2.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
+            //ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
             ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", order.EmployeeID);
             ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName", order.ShipVia);
             return View(order);
@@ -111,28 +112,28 @@ namespace CA2.Controllers
         ////
         //// GET: /Home/Delete/5
 
-        //public ActionResult Delete(int id = 0)
-        //{
-        //    Order order = db.Orders.Find(id);
-        //    if (order == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(order);
-        //}
+        public ActionResult Delete(int id = 0)
+        {
+            Order order = db.Orders.Find(id);
+            if (order == null)
+            {
+                return HttpNotFound();
+            }
+            return View(order);
+        }
 
-        ////
-        //// POST: /Home/Delete/5
+        //
+        // POST: /Home/Delete/5
 
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(int id)
-        //{
-        //    Order order = db.Orders.Find(id);
-        //    db.Orders.Remove(order);
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Order order = db.Orders.Find(id);
+            db.Orders.Remove(order);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
         protected override void Dispose(bool disposing)
         {
