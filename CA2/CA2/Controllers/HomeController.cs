@@ -21,7 +21,7 @@ namespace CA2.Controllers
             var orders = db.Orders.OrderBy(o => o.OrderDate);
             return View(orders);
         }
-        public  ActionResult EmpDetails(int id)
+        public  ActionResult EmpDetails(int id = 0)
         {
             var details = from eDets in db.Employees
                           where eDets.EmployeeID == id
@@ -30,50 +30,7 @@ namespace CA2.Controllers
             return PartialView("_EmpDetails", details);
         }
         //
-        // GET: /Home/Details/5
-
-        //public ActionResult Details(int id = 0)
-        //{
-        //    Order order = db.Orders.Find(id);
-        //    if (order == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(order);
-        //}
-
-        
-        // //GET: /Home/Create
-
-        //public ActionResult Create()
-        //{
-        //    ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName");
-        //    ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName");
-        //    ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName");
-        //    return View();
-        //}
-
-        ////
-        //// POST: /Home/Create
-
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(Order order)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Orders.Add(order);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-
-        //    ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
-        //    ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", order.EmployeeID);
-        //    ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName", order.ShipVia);
-        //    return View(order);
-        //}
-
-        ////
+       
         //// GET: /Home/Edit/5
 
         public ActionResult Edit(int id = 0)

@@ -7,7 +7,17 @@
        
 }
 
- 
+ @*<div id="modal" class="modal">
+	<div class="modal-header">
+		<h2>Lorem Ipsum</h2>
+	</div>	
+	<div class="modal-body">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem ipsum, ut faucibus nulla. 
+		Nullam mattis volutpat dolor, eu porta magna facilisis ut. In ultricies, purus sed pellentesque mollis, nibh 
+		tortor semper elit, eget rutrum purus nulla id quam.</p>
+	</div>
+</div>*@
+
 
 @section scripts {
     <script>
@@ -80,9 +90,10 @@
                     </td>
                     
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new {id = item.OrderID}) |
-                        @Html.ActionLink("Details", "Details", new {id = item.OrderID}) |
-                        @Html.ActionLink("Delete", "Delete", new {id = item.OrderID})
+                         <a class="btn btn-xs btn-warning" href="@Url.Action("Edit", "Home", new {id = item.OrderID})">Edit</a> |
+                        @*@Html.ActionLink("Details", "Details", new {id = item.OrderID}) |*@
+                         
+                        <a class="btn btn-xs btn-danger" href="@Url.Action("Delete", "Home", new {id = item.OrderID})">Delete</a>
                     </td>
                 </tr>
             }

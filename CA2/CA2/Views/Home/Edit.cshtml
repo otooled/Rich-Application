@@ -15,14 +15,14 @@
 
         @Html.HiddenFor(model => model.OrderID)
 
-        @*<div class="editor-label">
+        @*<div class="updateHeadings">
             @Html.LabelFor(model => model.CustomerID, "Customer")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.CustomerID)
             @Html.ValidationMessageFor(model => model.CustomerID)
         </div>*@
-        <div class="editor-label">
+        <div class="updateHeadings">
             Contact Name
         </div>
         <div class="">
@@ -30,7 +30,7 @@
             @Html.ValidationMessageFor(model => model.Customer.ContactName)
         </div>
         <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
            Employee
             @*@Html.DropDownList("EmployeeID", String.Empty)*@
         </div>
@@ -38,7 +38,7 @@
             @Html.DropDownList("EmployeeID", String.Empty)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             Order Date
         </div>
         <div class="editor-field">
@@ -46,17 +46,17 @@
             @Html.ValidationMessageFor(model => model.OrderDate)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
            Shipper
             @*@Html.DropDownList("ShipVia", String.Empty)*@
         </div>
-        <div class="editor-label">
+        <div class="updateHeadings">
             @*@Html.LabelFor(model => model.ShipVia, "Shipper")*@
             @Html.DropDownList("ShipVia", String.Empty)
         </div>
        <br/>
 
-        <div class="editor-label">
+        <div class="updateHeadings">
            Ship Name
         </div>
         <div class="editor-field">
@@ -64,7 +64,7 @@
             @Html.ValidationMessageFor(model => model.ShipName)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             Ship To
         </div>
         <div class="editor-field">
@@ -72,7 +72,7 @@
             @Html.ValidationMessageFor(model => model.ShipAddress)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             City
         </div>
         <div class="editor-field">
@@ -80,7 +80,7 @@
             @Html.ValidationMessageFor(model => model.ShipCity)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             Region
         </div>
         <div class="editor-field">
@@ -88,7 +88,7 @@
             @Html.ValidationMessageFor(model => model.ShipRegion)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             Post Code
         </div>
         <div class="editor-field">
@@ -96,7 +96,7 @@
             @Html.ValidationMessageFor(model => model.ShipPostalCode)
         </div>
          <br/>
-        <div class="editor-label">
+        <div class="updateHeadings">
             Country
         </div>
         <div class="editor-field">
@@ -105,14 +105,15 @@
         </div>
          <br/>
         <p>
-            <input type="submit" value="Save" />
+            <input type="submit" value="Save" class="btn btn-warning" /> |
+            @Html.ActionLink("Back to List", "Index")
         </p>
     </fieldset>
         
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    
 </div>
         
 @section Scripts {
