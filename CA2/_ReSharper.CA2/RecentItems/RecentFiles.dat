@@ -1,33 +1,35 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:AccountController.cs" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Create.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Details.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/f:Northwind.edmx.diagram" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Models/f:AccountModels.cs" caret="2990" fromTop="19" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:Create.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:Details.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:_Employee.cshtml" caret="32" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:Index.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Models/f:OrdersModel.cs" caret="160" fromTop="9" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:bootstrap-theme.min.css" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:App_Start/f:BundleConfig.cs" caret="1237" fromTop="10" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:bootstrap.css" caret="23543" fromTop="21" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:_empBoss.cshtml" caret="0" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:_LoginPartial.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:EmployeeController.cs" caret="414" fromTop="7" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:_EmpDetails.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:Edit.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:Delete.cshtml" caret="0" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:Site.css" caret="113" fromTop="7" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:_Layout.cshtml" caret="951" fromTop="20" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:_Employee.cshtml" caret="32" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/f:Web.config" caret="1597" fromTop="28" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:_Layout.cshtml" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:_LoginPartial.cshtml" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:_references.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:jquery-1.9.1.min.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:jquery-1.9.1.intellisense.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:bootstrap.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:bootstrap.min.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:jquery-ui-1.8.24.min.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:modernizr-2.6.2.js" caret="0" fromTop="0" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Scripts/f:deletePopWindow.js" caret="766" fromTop="17" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:App_Start/f:BundleConfig.cs" caret="443" fromTop="12" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Edit.cshtml" caret="869" fromTop="30" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:HomeController.cs" caret="555" fromTop="0" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Index.cshtml" caret="3527" fromTop="29" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:CA2SS.css" caret="674" fromTop="23" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Delete.cshtml" caret="3274" fromTop="23" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Edit.cshtml" caret="3486" fromTop="12" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:CA2SS.css" caret="256" fromTop="16" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Delete.cshtml" caret="3365" fromTop="16" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Index.cshtml" caret="3256" fromTop="69" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:_EmpDetails.cshtml" caret="0" fromTop="0" />
   </RecentFiles>
   <RecentEdits>
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Models/f:AccountModels.cs" caret="2990" fromTop="28" />
@@ -35,15 +37,16 @@
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:_Employee.cshtml" caret="32" fromTop="0" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Models/f:OrdersModel.cs" caret="160" fromTop="9" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:bootstrap.css" caret="23543" fromTop="21" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:App_Start/f:BundleConfig.cs" caret="1237" fromTop="10" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:_EmpDetails.cshtml" caret="276" fromTop="14" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Employee/f:_empBoss.cshtml" caret="156" fromTop="9" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:EmployeeController.cs" caret="414" fromTop="7" />
     <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Shared/f:_Layout.cshtml" caret="951" fromTop="20" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:HomeController.cs" caret="555" fromTop="8" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Index.cshtml" caret="3269" fromTop="26" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Delete.cshtml" caret="2908" fromTop="22" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:CA2SS.css" caret="674" fromTop="23" />
-    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Edit.cshtml" caret="3486" fromTop="12" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/f:Web.config" caret="1597" fromTop="28" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Controllers/f:HomeController.cs" caret="555" fromTop="12" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Edit.cshtml" caret="869" fromTop="28" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:_EmpDetails.cshtml" caret="803" fromTop="21" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Delete.cshtml" caret="3365" fromTop="16" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:App_Start/f:BundleConfig.cs" caret="443" fromTop="12" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Views/d:Home/f:Index.cshtml" caret="3256" fromTop="23" />
+    <File id="3CE7C03A-60FE-4C76-9BE2-7B211A3952D5/d:Content/f:CA2SS.css" caret="256" fromTop="16" />
   </RecentEdits>
 </RecentFiles>

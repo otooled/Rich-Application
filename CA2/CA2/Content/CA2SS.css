@@ -17,10 +17,10 @@
     top: auto;
 }
 .empDetails {
-    position: absolute;
+    position: fixed;
 
    top: 200px;
-    right: 200px;
+    right: 40px;
 }
 .heading {
     font-size: 20px;
@@ -43,5 +43,4 @@
 .updateHeadings {
     font-style: italic;
     color: darkblue;
-
 }

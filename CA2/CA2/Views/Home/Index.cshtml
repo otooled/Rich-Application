@@ -7,35 +7,33 @@
        
 }
 
- @*<div id="modal" class="modal">
-	<div class="modal-header">
-		<h2>Lorem Ipsum</h2>
-	</div>	
-	<div class="modal-body">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem ipsum, ut faucibus nulla. 
-		Nullam mattis volutpat dolor, eu porta magna facilisis ut. In ultricies, purus sed pellentesque mollis, nibh 
-		tortor semper elit, eget rutrum purus nulla id quam.</p>
-	</div>
-</div>*@
 
 
 @section scripts {
     <script>
         $('#tbl').on('click', 'tr', function () {
-            $('#form').submit(id);
-        })
-        </script>
+            $('#form').submit();
+            $("#empDets").animate({
+
+                height: "toggle",
+
+                opacity: "toggle"
+
+            }, "slow");
+        });
+
+
+        
+
+    </script>
+
 }
-@using (@Ajax.BeginForm("EmpDetails","Home", 
-    new AjaxOptions{InsertionMode = InsertionMode.Replace, 
-        UpdateTargetId = "empDets"}, 
-    new {@class="form-horizontal", @role="form", id="form"}))
-{
+
     <div id="ordTable" class="mainTableDiv">
     
         <table id="tbl" class="table-hover table-striped table-bordered table-condensed table-responsive" >
    
-            <tr >
+            <tr  >
         
                 <th class="tableHead">
                     Contact Name
@@ -57,51 +55,61 @@
                 <th class="tableHead">
                     Ship To Address
                 </th>
-
+               
             </tr>
 
             @foreach (var item in Model)
             {
-                <tr class="rowPointer" >
-                     
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Customer.ContactName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Employee.LastName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.OrderDate)
-                    </td>
-        
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Shipper.CompanyName)
-                    </td>
-        
-                    <td >
-                        @Html.DisplayFor(modelItem => item.ShipName)
-                    </td>
-                    <td class="scrolling" >
-                        @Html.DisplayFor(modelItem => item.ShipAddress)<br/>
-                        @Html.DisplayFor(modelItem => item.ShipCity)<br/>
-                        @Html.DisplayFor(modelItem => item.ShipRegion)<br/>
-                        @Html.DisplayFor(modelItem => item.ShipPostalCode)<br/>
-                        @Html.DisplayFor(modelItem => item.ShipCountry)
-                    </td>
-                    
-                    <td>
-                         <a class="btn btn-xs btn-warning" href="@Url.Action("Edit", "Home", new {id = item.OrderID})">Edit</a> |
-                        @*@Html.ActionLink("Details", "Details", new {id = item.OrderID}) |*@
+                <tr class="rowPointer">
+
+                    @using (@Ajax.BeginForm("EmpDetails", "Home", new {@id = item.Employee.EmployeeID},
+                                            new AjaxOptions
+                                                {
+                                                    InsertionMode = InsertionMode.Replace,
+                                                    UpdateTargetId = "empDets"
+                                                },
+                                            new {@class = "form-horizontal", @role = "form", id = "form"}))
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Customer.ContactName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Employee.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Shipper.CompanyName)
+                        </td>
+
+                        <td >
+                            @Html.DisplayFor(modelItem => item.ShipName)
+                        </td>
+                        <td class="scrolling" >
+                            @Html.DisplayFor(modelItem => item.ShipAddress)<br/>
+                            @Html.DisplayFor(modelItem => item.ShipCity)<br/>
+                            @Html.DisplayFor(modelItem => item.ShipRegion)<br/>
+                            @Html.DisplayFor(modelItem => item.ShipPostalCode)<br/>
+                            @Html.DisplayFor(modelItem => item.ShipCountry)
+                        </td>
+
+                        <td>
+                            <a class="btn btn-xs btn-warning" href="@Url.Action("Edit", "Home", new {id = item.OrderID})">Edit</a> |
+                            @*@Html.ActionLink("Details", "Details", new {id = item.OrderID}) |*@
                          
-                        <a class="btn btn-xs btn-danger" href="@Url.Action("Delete", "Home", new {id = item.OrderID})">Delete</a>
-                    </td>
+                            <a class="btn btn-xs btn-danger" href="@Url.Action("Delete", "Home", new {id = item.OrderID})">Delete</a>
+                        </td>
+                    }
                 </tr>
             }
-        </table>
-    </div>
-       
-}
-<div id="empDets" >
+                </table >
+            
+                </div >
+            
+
+<div id="empDets" class="empDetails" >
    
    
 </div>
