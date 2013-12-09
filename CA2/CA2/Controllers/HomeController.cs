@@ -21,6 +21,8 @@ namespace CA2.Controllers
             var orders = db.Orders.OrderBy(o => o.OrderDate);
             return View(orders);
         }
+
+        //Action to get employee details for Employee display window
         public  ActionResult EmpDetails(int id = 0)
         {
             var details = from eDets in db.Employees
@@ -28,6 +30,15 @@ namespace CA2.Controllers
                           select eDets;
 
             return PartialView("_EmpDetails", details);
+        }
+
+        //Action to get orders of employee selected from Employee display window
+        public  ActionResult EmpOrders(int id = 0)
+        {
+            var empOrd = from od in db.Orders
+                         where od.OrderID == id
+                         select od;
+            return View("Index", empOrd);
         }
         //
        
@@ -40,7 +51,7 @@ namespace CA2.Controllers
             {
                 return HttpNotFound();
             }
-            //ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
+            
             ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", order.EmployeeID);
             
             ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName", order.ShipVia);
@@ -60,7 +71,7 @@ namespace CA2.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            //ViewBag.CustomerID = new SelectList(db.Customers, "CustomerID", "CompanyName", order.CustomerID);
+            
             ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", order.EmployeeID);
             ViewBag.ShipVia = new SelectList(db.Shippers, "ShipperID", "CompanyName", order.ShipVia);
             return View(order);
@@ -86,6 +97,12 @@ namespace CA2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            //I need to delete the order from the order detail table before I can actually delete the order.
+            //I don't know how to do that.  I tried the following code.
+
+            //Order_Detail orderDetail = db.Order_Details.Find(id);
+            //db.Order_Details.Remove(orderDetail);
+
             Order order = db.Orders.Find(id);
             db.Orders.Remove(order);
             db.SaveChanges();

@@ -61,6 +61,8 @@
             @foreach (var item in Model)
             {
                 <tr class="rowPointer">
+                    
+                    @*Ajax to display Employee for order*@
 
                     @using (@Ajax.BeginForm("EmpDetails", "Home", new {@id = item.Employee.EmployeeID},
                                             new AjaxOptions

@@ -1,5 +1,5 @@
-2013/12/09-10:17:53.490 2108 Recovering log #64
-2013/12/09-10:17:53.583 2108 Level-0 table #66: started
-2013/12/09-10:17:53.599 2108 Level-0 table #66: 42551 bytes OK
-2013/12/09-10:17:53.614 2108 Delete type=0 #64
-2013/12/09-10:17:53.614 2108 Delete type=3 #62
+2013/12/09-16:44:39.655 1fdc Recovering log #67
+2013/12/09-16:44:39.655 1fdc Level-0 table #69: started
+2013/12/09-16:44:39.658 1fdc Level-0 table #69: 23767 bytes OK
+2013/12/09-16:44:39.706 1fdc Delete type=0 #67
+2013/12/09-16:44:39.707 1fdc Delete type=3 #65

@@ -2,40 +2,51 @@
 
 
 <div>
-<table class="table-hover table-striped table-bordered table-condensed table-responsive" >
-    <tr>
-        <th>
-            Name
-        </th>
+    <table class="table-hover table-striped table-bordered table-condensed table-responsive" >
+        <tr>
+            <th>
+                Name
+            </th>
         
-        <th>
-           Title
-        </th>
-        <th>
-           Supervisor
-        </th>
+            
+            <th>
+                Supervisor
+            </th>
         
-    </tr>
+        </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-             @Html.DisplayFor(modelItem => item.FirstName)
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Employee1.LastName)
-        </td>
-        
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeID }) 
-        </td>
-    </tr>
-}
+        @foreach (var item in Model) {
+            <tr>
+               @* Ajax to display order for employee*@
 
-</table>
+                    @using (@Ajax.BeginForm("EmpOrders", "Home", new {@id = item.EmployeeID},
+                                            new AjaxOptions
+                                                {
+                                                    InsertionMode = InsertionMode.Replace,
+                                                    UpdateTargetId = "ordTable"
+                                                },
+                                            new {@class = "form-horizontal", @role = "form", id = "form"}))
+                    {
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Employee1.LastName)
+                        </td>
+                        <td>
+                            <a class="btn btn-xs btn-info" href="@Url.Action("Delete", "Home", new {id = item.Employee1.Orders})">Employee's Orders</a>
+                        </td>
+                    }
+        
+            </tr>
+        }
+        
+    </table>
+      <br/>
+        <p>
+           
+           @* <a class="btn btn-xs btn-danger" href="@Url.Action("Delete", "Home", new {id = item.Employee1.Orders})">Employee's Orders</a>*@
+        </p>
 </div>
