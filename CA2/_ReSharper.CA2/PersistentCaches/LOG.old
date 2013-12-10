@@ -1,5 +1,5 @@
-2013/12/09-16:44:39.655 1fdc Recovering log #67
-2013/12/09-16:44:39.655 1fdc Level-0 table #69: started
-2013/12/09-16:44:39.658 1fdc Level-0 table #69: 23767 bytes OK
-2013/12/09-16:44:39.706 1fdc Delete type=0 #67
-2013/12/09-16:44:39.707 1fdc Delete type=3 #65
+2013/12/10-09:26:23.062 1de8 Recovering log #73
+2013/12/10-09:26:23.107 1de8 Level-0 table #76: started
+2013/12/10-09:26:23.122 1de8 Level-0 table #76: 21742 bytes OK
+2013/12/10-09:26:23.144 1de8 Delete type=0 #73
+2013/12/10-09:26:23.144 1de8 Delete type=3 #71

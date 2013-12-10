@@ -36,7 +36,7 @@ namespace CA2.Controllers
         public  ActionResult EmpOrders(int id = 0)
         {
             var empOrd = from od in db.Orders
-                         where od.OrderID == id
+                         where od.EmployeeID == id
                          select od;
             return View("Index", empOrd);
         }
