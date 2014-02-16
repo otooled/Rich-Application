@@ -9,7 +9,6 @@ namespace RACASem6.Classes
     {
         public int GuestId { get; set; }
         public string FirstName { get; set; }
-
         
     }
 }

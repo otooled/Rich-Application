@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RACASem6.Classes;
 
 namespace RACASem6.Controllers
 {
@@ -10,9 +11,20 @@ namespace RACASem6.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            return View();
+            using (var db = new TripContext())
+            {
+                var q1 = from o in db.Trips
+
+                         select o;
+
+                return View(q1);  
+            }
+            
+
+            //ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+
+            //return View();
         }
 
         public ActionResult About()

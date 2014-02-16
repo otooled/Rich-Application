@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -7,7 +9,12 @@ namespace RACASem6.Classes
 {
     public class LegGuest
     {
-        public int GuestId { get; set; }
-        public int LegId { get; set; }
+    [Key, Column(Order = 0)]
+        public int LetGuestGuestId { get; set; }
+        [Key, Column(Order = 1)]
+        public int LegGuestLegId { get; set; }
+
+        //public int LegId { get; set; }
+        //public int GuestId { get; set; }
     }
 }

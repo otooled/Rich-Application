@@ -14,6 +14,7 @@ namespace RACASem6.Classes
         public DateTime LegFinishDate { get; set; }
 
         public int TripId { set; get; }
-        public int GuestId { get; set; }
+        public virtual Trip Trip { get; set; }
+        public virtual List<LegGuest> LegGuests { get; set; } 
     }
 }
