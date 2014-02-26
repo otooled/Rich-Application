@@ -67,3 +67,13 @@ C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\zh-Hant\System.Spatial.resourc
 C:\Users\David\Desktop\RACA\RACASem6\RACASem6\obj\Debug\RACASem6.csprojResolveAssemblyReference.cache
 C:\Users\David\Desktop\RACA\RACASem6\RACASem6\obj\Debug\RACASem6.dll
 C:\Users\David\Desktop\RACA\RACASem6\RACASem6\obj\Debug\RACASem6.pdb
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.dll
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Common.dll
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Mvc.dll
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\WebActivator.dll
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.pdb
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.xml
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Common.pdb
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Common.xml
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Mvc.pdb
+C:\Users\David\Desktop\RACA\RACASem6\RACASem6\bin\Ninject.Web.Mvc.xml
