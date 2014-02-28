@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<RACASem6.Models.Trip>
+@{
     ViewBag.Title = "Home Page";
 }
 @section featured {
@@ -19,6 +20,20 @@
     </section>
 }
 <h3>We suggest the following:</h3>
+
+<table class="table">
+    
+    @foreach(var t in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(item=>t.TripName)</td>
+            <td>@Html.DisplayFor(item => t.NoOfLegs)</td>
+        </tr>
+    }    
+</table>
+
+    
+    
 <ol class="round">
     <li class="one">
         <h5>Getting Started</h5>

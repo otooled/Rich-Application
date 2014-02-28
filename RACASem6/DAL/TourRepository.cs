@@ -18,7 +18,8 @@ namespace RACASem6.DAL
 
         public IQueryable<RACASem6.Models.Trip> GetAllTrips()
         {
-            return _ctx.Trips.OrderBy(t => t.TripName);
+            var q = _ctx.Trips.OrderBy(t => t.TripName);
+            return q;
         }
 
         public void Dispose()

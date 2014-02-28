@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using RACASem6.Migrations;
 using RACASem6.Models;
 
 
@@ -17,16 +18,17 @@ namespace RACASem6.DAL
         public DbSet<LegGuest> LegGuests { get; set; } 
 
         public TourContext()
-            :base("TripDatabase")
+            /*:base("TripDatabase")*/
         {
-            Database.SetInitializer(new TripDB() );
+            /*Database.SetInitializer(new TripDB() ); JK*/
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<TourContext, Configuration>());
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
-    public class TripDB : DropCreateDatabaseIfModelChanges<TourContext>
+    /*public class TripDB : DropCreateDatabaseIfModelChanges<TourContext>
     {
         protected override void Seed(TourContext context)
         {
@@ -52,5 +54,5 @@ namespace RACASem6.DAL
             trips.ForEach(t => context.Trips.Add(t));
             context.SaveChanges();
         }
-    }
+    }*/
 }
