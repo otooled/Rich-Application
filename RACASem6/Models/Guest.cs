@@ -9,6 +9,7 @@ namespace RACASem6.Models
     {
         public int GuestId { get; set; }
         public string FirstName { get; set; }
-        
+
+        public virtual ICollection<LegGuest> LegGuests { get; set; } 
     }
 }

@@ -42,7 +42,7 @@ namespace RACASem6.Migrations
                                         TripNoOfGuests = 3
                                     }
                             };
-            trips.ForEach(t => context.Trips.Add(t));
+            trips.ForEach(t => context.Trips.AddOrUpdate(t));
             context.SaveChanges();   
         }   // end Seed()
     }   // end Configuration

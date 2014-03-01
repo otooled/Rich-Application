@@ -1,29 +1,31 @@
 ﻿<RecentFiles>
   <RecentFiles>
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="473" fromTop="12" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="0" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="215" fromTop="7" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:TripDB.cs" caret="511" fromTop="16" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:NinjectWebCommon.cs" caret="1986" fromTop="13" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="2078" fromTop="48" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="0" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="272" fromTop="11" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="959" fromTop="43" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="116" fromTop="5" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="214" fromTop="1" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="546" fromTop="17" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="312" fromTop="12" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="1468" fromTop="27" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="418" fromTop="14" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="974" fromTop="27" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="0" fromTop="0" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="438" fromTop="17" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="219" fromTop="10" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="1904" fromTop="22" />
   </RecentFiles>
   <RecentEdits>
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="482" fromTop="12" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:TripDB.cs" caret="1350" fromTop="26" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="116" fromTop="5" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="188" fromTop="8" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="116" fromTop="5" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="215" fromTop="7" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="281" fromTop="11" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="576" fromTop="26" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="2078" fromTop="26" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="1106" fromTop="22" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:NinjectWebCommon.cs" caret="1986" fromTop="13" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="958" fromTop="30" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="546" fromTop="17" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="312" fromTop="12" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="1468" fromTop="27" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="418" fromTop="14" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="114" fromTop="5" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="1904" fromTop="22" />
   </RecentEdits>
 </RecentFiles>

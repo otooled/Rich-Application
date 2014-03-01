@@ -28,7 +28,7 @@ namespace RACASem6.Models
         [Display(Name = "No. of guests")]
         public int TripNoOfGuests { get; set; }
 
-        public virtual List<Leg> Legs { get; set; } 
+        public virtual ICollection<Leg> Legs { get; set; } 
     }
 }
 

@@ -13,8 +13,8 @@ namespace RACASem6.Models
         public DateTime LegStartDate { get; set; }
         public DateTime LegFinishDate { get; set; }
 
-        public int TripId { set; get; }
+        //navigation fields
         public virtual Trip Trip { get; set; }
-        public virtual List<LegGuest> LegGuests { get; set; } 
+        public virtual ICollection<LegGuest> LegGuests { get; set; } 
     }
 }
