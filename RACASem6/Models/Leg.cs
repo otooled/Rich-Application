@@ -17,7 +17,7 @@ namespace RACASem6.Models
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}"), Display(Name = "Finish date")]
         public DateTime LegFinishDate { get; set; }
 
-        public int TripId { get; set; }
+       // public int TripId { get; set; }
 
         //navigation fields
         public virtual Trip Trip { get; set; }

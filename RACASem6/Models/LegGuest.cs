@@ -9,10 +9,11 @@ namespace RACASem6.Models
 {
     public class LegGuest
     {
-        [Key, Column(Order = 0)]
-        public int LetGuestGuestId { get; set; }
-        [Key, Column(Order = 1)]
-        public int LegGuestLegId { get; set; }
+        public int LegGuestID { get; set; }
+       
+        public int GuestId { get; set; }
+        
+        public int LegId { get; set; }
 
         public virtual Leg Leg { get; set; }
         public virtual Guest Guest { get; set; }

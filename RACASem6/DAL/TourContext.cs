@@ -18,7 +18,7 @@ namespace RACASem6.DAL
         public DbSet<LegGuest> LegGuests { get; set; } 
 
         public TourContext()
-            /*:base("TripDatabase")*/
+        :base("TourDatabase")
         {
             /*Database.SetInitializer(new TripDB() ); JK*/
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<TourContext, Configuration>());
