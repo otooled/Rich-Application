@@ -18,32 +18,75 @@ namespace RACASem6.Migrations
 
         protected override void Seed(RACASem6.DAL.TourContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
+            //Add trips to database
             var trips = new List<Trip>
                             {
+                                //This trip is complete
                                 new Trip
-                                    {
-                                        TripName = "Dublin",
-                                        TripStartDate = DateTime.Parse("2012-05-02"),
-                                        TripFinishDate = DateTime.Parse("2012-05-08"),
-                                        NoOfLegs = 2,
-                                        TripNoOfGuests = 7
-                                    },
+                                    {TripName = "Dublin", TripStartDate = DateTime.Parse("2014-05-02"), TripFinishDate = DateTime.Parse("2014-06-08"),
+                                        NoOfLegs = 6, TripNoOfGuests = 7},
+
+                                //This trip is viable    
                                 new Trip
-                                    {
-                                        TripName = "London",
-                                        TripStartDate = DateTime.Parse("2013-07-04"),
-                                        TripFinishDate = DateTime.Parse("2013-07-11"),
-                                        NoOfLegs = 1,
-                                        TripNoOfGuests = 3
-                                    }
+                                    {TripName = "London", TripStartDate = DateTime.Parse("2014-03-04"), TripFinishDate = DateTime.Parse("2014-04-11"),
+                                        NoOfLegs = 5, TripNoOfGuests = 4},
+
+                                 //This trip is complete and viable
+                                 new Trip
+                                     {TripName = "New York", TripStartDate = DateTime.Parse("2014-05-10"), TripFinishDate = DateTime.Parse("2014-06-11"),
+                                        NoOfLegs = 6, TripNoOfGuests = 5},
+
+                                 //This trip is not complete i.e legs are not spanning trip duration
+                                 new Trip
+                                     {TripName = "Paris", TripStartDate = DateTime.Parse("2014-08-15"), TripFinishDate = DateTime.Parse("2014-09-17"),
+                                        NoOfLegs = 8, TripNoOfGuests = 14},
+
+                                 //This trip is not viable i.e not enough guests
+                                 new Trip
+                                    {TripName = "Athens", TripStartDate = DateTime.Parse("2014-04-22"), TripFinishDate = DateTime.Parse("2014-05-11"),
+                                        NoOfLegs = 8, TripNoOfGuests = 14}
                             };
             trips.ForEach(t => context.Trips.AddOrUpdate(t));
             context.SaveChanges();   
+  
+            //Add legs to database
+            var legs = new List<Leg>
+                           {
+                               //Legs for trip 1
+                               new Leg
+                               {StartLocation = "Cork", FinishLocation = "Kerry", LegStartDate = DateTime.Parse("2014-05-02"),
+                                       LegFinishDate = DateTime.Parse("2014-05-09"), TripId = 1},
+
+                               new Leg
+                               {StartLocation = "Kerry", FinishLocation = "Clare", LegStartDate = DateTime.Parse("2014-05-10"),
+                                           LegFinishDate = DateTime.Parse("2014-05-17"), TripId = 1},
+                                
+                               new Leg
+                                {
+                                   StartLocation = "Clare", FinishLocation = "Galway", LegStartDate = DateTime.Parse("2014-05-18"),
+                                           LegFinishDate = DateTime.Parse("2014-05-20"), TripId = 1 
+                                },
+
+                                new Leg
+                                {
+                                   StartLocation = "Galway", FinishLocation = "Roscommon", LegStartDate = DateTime.Parse("2014-05-21"),
+                                           LegFinishDate = DateTime.Parse("2014-05-26"), TripId = 1 
+                                },
+
+                                new Leg
+                                {
+                                   StartLocation = "Roscommon", FinishLocation = "Tipperary", LegStartDate = DateTime.Parse("2014-05-27"),
+                                           LegFinishDate = DateTime.Parse("2014-05-30"), TripId = 1 
+                                },
+                                new Leg
+                                {
+                                   StartLocation = "Tipperary", FinishLocation = "Dublin", LegStartDate = DateTime.Parse("2014-05-31"),
+                                           LegFinishDate = DateTime.Parse("2014-06-08"), TripId = 1 
+                                }
+
+                           };
+            
+            legs.ForEach(l => context.Legs.AddOrUpdate(l));
         }   // end Seed()
     }   // end Configuration
 }

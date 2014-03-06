@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace RACASem6.Models
 {
@@ -10,8 +11,13 @@ namespace RACASem6.Models
         public int LegId { get; set; }
         public string StartLocation { get; set; }
         public string FinishLocation { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}"), Display(Name = "Start date")]
         public DateTime LegStartDate { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}"), Display(Name = "Finish date")]
         public DateTime LegFinishDate { get; set; }
+
+        public int TripId { get; set; }
 
         //navigation fields
         public virtual Trip Trip { get; set; }

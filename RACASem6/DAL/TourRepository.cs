@@ -22,6 +22,12 @@ namespace RACASem6.DAL
             return q;
         }
 
+        public IQueryable<RACASem6.Models.Leg> GetAllLegs()
+        {
+            var lq = _ctx.Legs.OrderBy(l => l.StartLocation);
+            return lq;
+        }
+
         public void Dispose()
         {
             _ctx.Dispose();
