@@ -1,5 +1,5 @@
-2014/03/06-16:10:57.275 1fec Recovering log #47
-2014/03/06-16:10:57.275 1fec Level-0 table #50: started
-2014/03/06-16:10:57.275 1fec Level-0 table #50: 7277 bytes OK
-2014/03/06-16:10:57.290 1fec Delete type=0 #47
-2014/03/06-16:10:57.290 1fec Delete type=3 #45
+2014/03/08-19:01:20.990 1db8 Recovering log #105
+2014/03/08-19:01:20.990 1db8 Level-0 table #107: started
+2014/03/08-19:01:20.993 1db8 Level-0 table #107: 7520 bytes OK
+2014/03/08-19:01:21.000 1db8 Delete type=0 #105
+2014/03/08-19:01:21.000 1db8 Delete type=3 #103

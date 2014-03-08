@@ -23,9 +23,7 @@
         <th>
             @Html.DisplayNameFor(model => model.TripFinishDate)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TripNoOfGuests)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -43,12 +41,10 @@
         <td>
             @Html.DisplayFor(modelItem => item.TripFinishDate)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripNoOfGuests)
-        </td>
+        
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.TripId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TripId }) |
+            @Html.ActionLink("Details", "TripDetails", "Home", new { id=item.TripId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.TripId })
         </td>
     </tr>

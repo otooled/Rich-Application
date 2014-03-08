@@ -1,0 +1,29 @@
+﻿@model RACASem6.Models.Trip
+
+<div class="row">
+    <div class="col-lg-offset-1 col-sm-6">
+        <h2>Trip: @Model.TripId @Model.TripName</h2>
+        <p class="lead">Details view of a single student.</p>
+
+ @*   <div class="form-group">
+        <label class="h4">@Html.DisplayNameFor(model => model.LastName): </label>
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+    
+    <div class="form-group">
+        <label class="h4">@Html.DisplayNameFor(model => model.FirstMidName): </label>
+        @Html.DisplayFor(model => model.FirstMidName)
+    </div>
+        
+    <div class="form-group">
+        <label class="h4">@Html.DisplayNameFor(model => model.EnrollmentDate): </label>
+        @Html.DisplayFor(model => model.EnrollmentDate)
+    </div>*@
+        
+        <p>
+        @*@Html.ActionLink("Edit", "Edit", new { id=Model.StudentID }, new {@class="btn btn-info btn-sm"})*@
+        @Html.ActionLink("Back to List", "Index",null, new {@class="btn btn-success btn-sm"})
+    </p>
+    </div>
+    </div>
+

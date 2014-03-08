@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 //using RACASem6.Classes;
@@ -28,19 +29,34 @@ namespace RACASem6.Controllers
             //return View();
         }
 
-        public ActionResult About()
+        public ActionResult TripDetails(int? id)
         {
-            ViewBag.Message = "Your app description page.";
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
 
-            return View();
+            Trip trip = _repo.GetTripById(id);
+            if (trip == null)
+            {
+                return HttpNotFound();
+            }
+            return PartialView("_TripDetails", trip);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult About()
+        //{
+        //    ViewBag.Message = "Your app description page.";
 
-            return View();
-        }
+        //    return View();
+        //}
+
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
+
+        //    return View();
+        //}
 
         protected override void Dispose(bool disposing)
         {

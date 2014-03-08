@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using RACASem6.Models;
 using RACASem6.DAL;
+using System.Data.Entity;
 
 namespace RACASem6.DAL
 {
@@ -20,6 +21,11 @@ namespace RACASem6.DAL
         {
             var q = _ctx.Trips.OrderBy(t => t.TripName);
             return q;
+        }
+
+        public RACASem6.Models.Trip GetTripById(int? id)
+        {
+            return _ctx.Trips.Include(t => t.Legs).SingleOrDefault(t => t.TripId == id);
         }
 
         public IQueryable<RACASem6.Models.Leg> GetAllLegs()
