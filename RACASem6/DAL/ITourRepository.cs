@@ -10,8 +10,8 @@ namespace RACASem6.DAL
     public interface ITourRepository : IDisposable
     {
         IQueryable<Trip> GetAllTrips();
-        Trip GetTripById(int ? id);
-        IQueryable<Leg> GetAllLegs();
-         
+        Trip GetTripById(int? id);
+        Leg GetLegsByTripId(int? id);
+
     }
 }

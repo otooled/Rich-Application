@@ -24,8 +24,8 @@ namespace RACASem6
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
-                "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/CA2SS.css",
+               "~/Content/bootstrap.css"));
             
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

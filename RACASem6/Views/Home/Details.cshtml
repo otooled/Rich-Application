@@ -1,0 +1,43 @@
+﻿@model RACASem6.Models.Leg
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Leg</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StartLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartLocation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FinishLocation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FinishLocation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LegStartDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LegStartDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LegFinishDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LegFinishDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.LegId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

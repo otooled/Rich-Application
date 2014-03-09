@@ -18,31 +18,48 @@ namespace RACASem6.Controllers
         {
             _repo = repo;
         }
+
         public ActionResult Index()
         {
             return View(_repo.GetAllTrips());
-
-
-
-            //ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
-            //return View();
         }
 
-        public ActionResult TripDetails(int? id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Trip trip = _repo.GetTripById(id);
-            if (trip == null)
+            Leg tripLegs = _repo.GetLegsByTripId(id);
+            if (tripLegs == null)
             {
                 return HttpNotFound();
             }
-            return PartialView("_TripDetails", trip);
+            return View(tripLegs);
         }
+
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
+
+        ////
+        //// POST: /test/Create
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(Trip trip)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _repo.Trips.Add(trip);
+        //        _repo.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(trip);
+        //}
 
         //public ActionResult About()
         //{

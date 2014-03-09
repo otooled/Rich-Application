@@ -4,26 +4,26 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Trips</h2>
+<div class="row">
+    <div class="col-lg-offset-1 col-sm-6">
+        <h2>List of Students</h2>
+        <p class="lead">Basic EF with seeded database. Data Migrations are also enabled to cope with any changes to the data model.</p>
+       @* @Html.ActionLink("Create Student","Create","Home",null, new {@class="btn btn-primary", style="margin-bottom:10px"})*@
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table-hover table-bordered table-striped">
+<table>
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TripName)
+        <th class="tableHead">
+           Trip Name
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Legs.Count)
+      <th class="tableHead">
+           Trip Start Date
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TripStartDate)
+        <th class="tableHead">
+           Trip Finish Date
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TripFinishDate)
-        </th>
-        
         <th></th>
     </tr>
 
@@ -33,9 +33,6 @@
             @Html.DisplayFor(modelItem => item.TripName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Legs.Count)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.TripStartDate)
         </td>
         <td>
@@ -43,11 +40,11 @@
         </td>
         
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TripId }) |
-            @Html.ActionLink("Details", "TripDetails", "Home", new { id=item.TripId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TripId })
+            @Html.ActionLink("Details", "Details", new { id=item.TripId }) 
         </td>
     </tr>
 }
 
 </table>
+         </div>
+</div>

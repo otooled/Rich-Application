@@ -258,6 +258,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Content\Tour.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -291,7 +292,7 @@
     <Content Include="packages.config" />
     <None Include="readme.txt" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\_TripDetails.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

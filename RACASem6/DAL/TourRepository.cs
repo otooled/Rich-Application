@@ -25,13 +25,15 @@ namespace RACASem6.DAL
 
         public RACASem6.Models.Trip GetTripById(int? id)
         {
-            return _ctx.Trips.Include(t => t.Legs).SingleOrDefault(t => t.TripId == id);
+            return _ctx.Trips.SingleOrDefault(t => t.TripId == id);
         }
 
-        public IQueryable<RACASem6.Models.Leg> GetAllLegs()
+        public RACASem6.Models.Leg GetLegsByTripId(int? id)
         {
-            var lq = _ctx.Legs.OrderBy(l => l.StartLocation);
-            return lq;
+            return _ctx.Legs.SingleOrDefault(l => l.Trip.TripId == id);
+
+
+            //return _ctx.Legs.Where(l => l.Trip.TripId == id);
         }
 
         public void Dispose()

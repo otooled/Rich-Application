@@ -1,0 +1,15 @@
+﻿body {
+}
+.tableHead {
+    width: 100px;
+    position: relative;
+    top: auto;
+}
+
+.rowPointer {
+     cursor: pointer;
+}
+.mainTableDiv {
+    width: 920px;
+    margin-left: 50px;
+}

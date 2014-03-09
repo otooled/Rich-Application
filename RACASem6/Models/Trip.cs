@@ -16,8 +16,8 @@ namespace RACASem6.Models
         [Display(Name = "Trip Name" )]
         public string TripName { get; set; }
 
-        //[Display(Name = "No. of legs")]
-        //public int NoOfLegs { get; set; }
+        [Display(Name = "No. of legs")]
+        public int NoOfLegs { get; set; }
 
         
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}"), Display(Name = "Start date")]
