@@ -1,4 +1,4 @@
-﻿@model RACASem6.Models.Leg
+﻿@model RACASem6.Models.Trip
 
 @{
     ViewBag.Title = "Details";
@@ -7,37 +7,44 @@
 <h2>Details</h2>
 
 <fieldset>
-    <legend>Leg</legend>
+    <legend>Trip</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.StartLocation)
+         @Html.DisplayNameFor(model => model.TripName)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.StartLocation)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.FinishLocation)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.FinishLocation)
+        @Html.DisplayFor(model => model.TripName)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.LegStartDate)
+         @Html.DisplayNameFor(model => model.NoOfLegs)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.LegStartDate)
+        @Html.DisplayFor(model => model.NoOfLegs)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.LegFinishDate)
+         @Html.DisplayNameFor(model => model.TripStartDate)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.LegFinishDate)
+        @Html.DisplayFor(model => model.TripStartDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TripFinishDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TripFinishDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TripNoOfGuests)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TripNoOfGuests)
     </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.LegId }) |
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TripId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

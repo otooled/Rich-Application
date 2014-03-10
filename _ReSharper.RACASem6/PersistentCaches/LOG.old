@@ -1,5 +1,5 @@
-2014/03/09-19:46:45.025 1bbc Recovering log #134
-2014/03/09-19:46:45.025 1bbc Level-0 table #136: started
-2014/03/09-19:46:45.028 1bbc Level-0 table #136: 1662 bytes OK
-2014/03/09-19:46:45.034 1bbc Delete type=0 #134
-2014/03/09-19:46:45.035 1bbc Delete type=3 #132
+2014/03/10-18:37:00.294 1f28 Recovering log #144
+2014/03/10-18:37:00.294 1f28 Level-0 table #146: started
+2014/03/10-18:37:00.300 1f28 Level-0 table #146: 3914 bytes OK
+2014/03/10-18:37:00.308 1f28 Delete type=0 #144
+2014/03/10-18:37:00.308 1f28 Delete type=3 #142

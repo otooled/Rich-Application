@@ -31,12 +31,12 @@ namespace RACASem6.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            Leg tripLegs = _repo.GetLegsByTripId(id);
-            if (tripLegs == null)
+           Trip trips = _repo.GetTripById(id);
+            if (trips == null)
             {
                 return HttpNotFound();
             }
-            return View(tripLegs);
+            return View(trips);
         }
 
         //public ActionResult Create()
