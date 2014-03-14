@@ -4,47 +4,54 @@
     ViewBag.Title = "Details";
 }
 
+
 <h2>Details</h2>
+        <div class="col-md-6">
+            <fieldset>
+                <legend>Trip</legend>
 
-<fieldset>
-    <legend>Trip</legend>
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.TripName)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.TripName)
+                </div>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.TripName)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.TripName)
-    </div>
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.NoOfLegs)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.NoOfLegs)
+                </div>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.NoOfLegs)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.NoOfLegs)
-    </div>
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.TripStartDate)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.TripStartDate)
+                </div>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.TripStartDate)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.TripStartDate)
-    </div>
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.TripFinishDate)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.TripFinishDate)
+                </div>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.TripFinishDate)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.TripFinishDate)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.TripNoOfGuests)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.TripNoOfGuests)
-    </div>
-</fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.TripId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                <div class="display-label">
+                    @Html.DisplayNameFor(model => model.TripNoOfGuests)
+                </div>
+                <div class="display-field">
+                    @Html.DisplayFor(model => model.TripNoOfGuests)
+                </div>
+            </fieldset>
+    
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id=Model.TripId }) |
+                @Html.ActionLink("Back to List", "Index")
+    
+                @Ajax.ActionLink("Legs", "LegsAction", "Home", new {id = Model.TripId}, new AjaxOptions{InsertionMode = InsertionMode.Replace, UpdateTargetId = "LegsPosition"})
+            </p>
+        </div>
+<div id="LegsPosition" class="col-md-6"></div>
+   

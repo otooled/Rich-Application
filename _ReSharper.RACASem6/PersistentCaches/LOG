@@ -1,5 +1,5 @@
-2014/03/10-19:15:00.717 1c60 Recovering log #147
-2014/03/10-19:15:00.717 1c60 Level-0 table #149: started
-2014/03/10-19:15:00.719 1c60 Level-0 table #149: 5195 bytes OK
-2014/03/10-19:15:00.724 1c60 Delete type=0 #147
-2014/03/10-19:15:00.725 1c60 Delete type=3 #145
+2014/03/14-15:15:37.935 1d2c Recovering log #160
+2014/03/14-15:15:37.936 1d2c Level-0 table #162: started
+2014/03/14-15:15:37.941 1d2c Level-0 table #162: 35842 bytes OK
+2014/03/14-15:15:37.948 1d2c Delete type=0 #160
+2014/03/14-15:15:37.949 1d2c Delete type=3 #158

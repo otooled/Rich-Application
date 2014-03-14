@@ -28,13 +28,14 @@ namespace RACASem6.DAL
             return _ctx.Trips.SingleOrDefault(t => t.TripId == id);
         }
 
-        //public RACASem6.Models.Leg GetLegsByTripId(int? id)
-        //{
-        //    return _ctx.Legs.SingleOrDefault(l => l.Trip.TripId == id);
+        public Trip GetLegsByTripId(int? id)
+        {
+            Trip t = _ctx.Trips.Find(id);
+            
 
-
-        //    //return _ctx.Legs.Where(l => l.Trip.TripId == id);
-        //}
+            return t;
+            //return _ctx.Legs.Where(l => l.Trip.TripId == id);
+        }
 
         public void Dispose()
         {

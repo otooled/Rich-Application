@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RACASem6.Models.Leg>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StartLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinishLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LegStartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LegFinishDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinishLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LegStartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LegFinishDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LegId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LegId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LegId })
+        </td>
+    </tr>
+}
+
+</table>

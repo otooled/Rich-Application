@@ -1,5 +1,5 @@
-2014/03/10-18:37:00.294 1f28 Recovering log #144
-2014/03/10-18:37:00.294 1f28 Level-0 table #146: started
-2014/03/10-18:37:00.300 1f28 Level-0 table #146: 3914 bytes OK
-2014/03/10-18:37:00.308 1f28 Delete type=0 #144
-2014/03/10-18:37:00.308 1f28 Delete type=3 #142
+2014/03/11-09:49:06.528 1cac Recovering log #157
+2014/03/11-09:49:06.528 1cac Level-0 table #159: started
+2014/03/11-09:49:06.531 1cac Level-0 table #159: 875 bytes OK
+2014/03/11-09:49:06.538 1cac Delete type=0 #157
+2014/03/11-09:49:06.538 1cac Delete type=3 #155

@@ -39,6 +39,14 @@ namespace RACASem6.Controllers
             return View(trips);
         }
 
+        public ActionResult LegsAction(int id)
+        {
+           Trip t = _repo.GetLegsByTripId(id);
+            List<Leg> ls = t.Legs;
+
+            return PartialView("_LegsAction", ls);
+        }
+
         //public ActionResult Create()
         //{
         //    return View();

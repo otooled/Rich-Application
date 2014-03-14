@@ -39,7 +39,7 @@ namespace RACASem6.Migrations
                                             TripFinishDate = DateTime.Parse("2014-04-11"),
                                         },
 
-                                    //This trip is viable 
+                                    //This trip is viable but not complete
                                     new Trip
                                         {
                                             TripName = "New York",
@@ -335,17 +335,24 @@ namespace RACASem6.Migrations
                                             },
 
                                             //guests to make trip 3 viable but it's not complete
-                                        //new LegGuest
-                                        //    {
-                                        //        Leg = legs[6],
-                                        //        Guest = guests[1]
-                                        //    },
+                                        new LegGuest
+                                            {
+                                                Leg = legs[12],
+                                                Guest = guests[4]
+                                            },
+                                             new LegGuest
+                                            {
+                                                Leg = legs[13],
+                                                Guest = guests[5]
+                                            },
+                                             new LegGuest
+                                            {
+                                                Leg = legs[14],
+                                                Guest = guests[6]
+                                            }
                                     };
                 legGuests.ForEach(lg => context.LegGuests.Add(lg));
                 context.SaveChanges();
-
-
-
             }
         }   // end Seed()
     }   // end Configuration
