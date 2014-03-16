@@ -17,7 +17,7 @@
 }
 .mainTitle {
     color: crimson;
-    font-size: 22px;
+    font-size: 28px;
     font-family: cursive;
     text-align: center;
 }
@@ -25,4 +25,8 @@
     position: fixed;
    top: 200px;
     right: 150px;
+}
+.newTripHeading {
+    color: green;
+    font-family: cursive;
 }

@@ -3,49 +3,62 @@
 @{
     ViewBag.Title = "Details";
 }
-<div class="row">
-    <div class="col-lg-offset-1 col-sm-6">
-        <h2>@Model.TripName</h2>
-        @*<h2>Student: @Model.FirstMidName @Model.LastName</h2>*@
-        <p class="lead">Trip Details.</p>
+@*<div class="row">*@
+<div class="col-lg-offset-1 col-sm-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 well-lg well " align="center">
+                @*<div class="row">
+    <div class="col-lg-offset-1 col-sm-6">*@
+                <h2>@Model.TripName</h2>
+                @*<h2>Student: @Model.FirstMidName @Model.LastName</h2>*@
+                @*<p class="lead">Trip Details.</p>*@
 
-        <div class="form-group">
-            <label class="h4">@Html.DisplayNameFor(model => model.TripName): </label>
-            @Html.DisplayFor(model => model.TripName)
-        </div>
-    
-        <div class="form-group">
-            <label class="h4">@Html.DisplayNameFor(model => model.NoOfLegs): </label>
-            @Html.DisplayFor(model => model.Legs.Count)
-        </div>
-        
-        <div class="form-group">
-            <label class="h4">@Html.DisplayNameFor(model => model.TripStartDate): </label>
-            @Html.DisplayFor(model => model.TripStartDate)
-        </div>
-        
-        <div class="form-group">
-            <label class="h4">@Html.DisplayNameFor(model => model.TripFinishDate): </label>
-            @Html.DisplayFor(model => model.TripFinishDate)
-        </div>
-        
-       @* <div class="form-group">
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.TripName): </label>
+                    @Html.DisplayFor(model => model.TripName)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.NoOfLegs): </label>
+                    @Html.DisplayFor(model => model.Legs.Count)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.TripStartDate): </label>
+                    @Html.DisplayFor(model => model.TripStartDate)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.TripFinishDate): </label>
+                    @Html.DisplayFor(model => model.TripFinishDate)
+                </div>
+
+                @* <div class="form-group">
             <label class="h4"> @Html.DisplayNameFor(model => model.TripNoOfGuests): </label>
             @Html.DisplayFor(model => model.TripNoOfGuests)
         </div>*@
-        
-          
-        
-        <p>
-            @Html.ActionLink("Edit", "Edit", new { id=Model.TripId }) |
-            @Html.ActionLink("Back to List", "Index")
-    
-            @Ajax.ActionLink("Legs", "LegsAction", "Home", new {id = Model.TripId}, new AjaxOptions{InsertionMode = InsertionMode.Replace, UpdateTargetId = "LegsPosition"})
-        </p>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-4 spaceIt text-right">
+            <div class="btn-group">
+
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-arrow-left"></i> Back</a>
+
+                @Ajax.ActionLink(" View Trip Legs", "LegsAction", "Home", new { id = Model.TripId },
+                                     new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "LegsPosition" },
+                                     new { @class = "btn btn-success btn-lg"})
+
+            </div>
+        </div>
     </div>
 </div>
+@*</div>*@
+
 <div id="LegsPosition" class="legsPosition"></div>
 
 
 
-   

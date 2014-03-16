@@ -9,14 +9,8 @@
 
 <div class="row">
     <div class="col-lg-offset-1 col-sm-6" >
-        <h2 align="center">Trips</h2>
+        <h2 class="newTripHeading" align="center">Trips</h2>
         @*<p class="lead"></p>*@
-         @Html.ActionLink("Create your Trip","CreateTrip","Home",null, new {@class="btn btn-primary", style="margin-bottom:10px"})
-      
-
-       @* <p>
-            @Html.ActionLink("Create New", "Create")
-        </p>*@
         <div class="mainTableDiv">
             <table class="table-striped table-hover">
                 <tr>
@@ -27,7 +21,7 @@
                         Start Date
                     </th>
                     <th class="tableHead">
-                       Finish Date
+                        Finish Date
                     </th>
                     <th></th>
                 </tr>
@@ -51,6 +45,9 @@
                 }
 
             </table>
-            </div>
-         </div>
+             @Html.ActionLink(" Create your own Trip","CreateTrip","Home",null, new {@class="btn btn-success glyphicon glyphicon-plane ", style="margin-top:20px"})
+        </div>
+      
+    </div>
+    @*, style="margin-bottom:10px"*@
 </div>
