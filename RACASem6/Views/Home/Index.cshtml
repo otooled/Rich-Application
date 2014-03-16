@@ -3,48 +3,54 @@
 @{
     ViewBag.Title = "Index";
 }
+<script>
+    $(document).ready(function() { toastr.info(@Model.Count()+' Trips to view')});
+</script>
 
 <div class="row">
-    <div class="col-lg-offset-1 col-sm-6">
-        <h2>Trips</h2>
-        <p class="lead"></p>
-       @* @Html.ActionLink("Create Student","Create","Home",null, new {@class="btn btn-primary", style="margin-bottom:10px"})*@
+    <div class="col-lg-offset-1 col-sm-6" >
+        <h2 align="center">Trips</h2>
+        @*<p class="lead"></p>*@
+         @Html.ActionLink("Create your Trip","CreateTrip","Home",null, new {@class="btn btn-primary", style="margin-bottom:10px"})
+      
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th class="tableHead">
-           Trip Name
-        </th>
-      <th class="tableHead">
-           Trip Start Date
-        </th>
-        <th class="tableHead">
-           Trip Finish Date
-        </th>
-        <th></th>
-    </tr>
+       @* <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
+        <div class="mainTableDiv">
+            <table class="table-striped table-hover">
+                <tr>
+                    <th class="tableHead">
+                        Trip Name
+                    </th>
+                    <th class="tableHead">
+                        Start Date
+                    </th>
+                    <th class="tableHead">
+                       Finish Date
+                    </th>
+                    <th></th>
+                </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripStartDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TripFinishDate)
-        </td>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TripName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TripStartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TripFinishDate)
+                        </td>
         
-        <td>
-            @Html.ActionLink("Details", "Details", new { id=item.TripId }) 
-        </td>
-    </tr>
-}
+                        <td>
+                            @Html.ActionLink("Trip Info", "Details", "Home", new { id=item.TripId }, new{@class="btn btn-sm btn-info"}) 
+                        </td>
+                    </tr>
+                }
 
-</table>
+            </table>
+            </div>
          </div>
 </div>

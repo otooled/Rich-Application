@@ -10,7 +10,8 @@ namespace RACASem6
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
-                        "~/scripts/bootstrap.js"));
+                        "~/scripts/bootstrap.js",
+                        "~/Scripts/toastr.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -24,8 +25,8 @@ namespace RACASem6
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/CA2SS.css",
-               "~/Content/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/Tour.css",
+               "~/Content/bootstrap.css", "~/Content/toastr.css"));
             
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

@@ -1,5 +1,5 @@
-2014/03/11-09:49:06.528 1cac Recovering log #157
-2014/03/11-09:49:06.528 1cac Level-0 table #159: started
-2014/03/11-09:49:06.531 1cac Level-0 table #159: 875 bytes OK
-2014/03/11-09:49:06.538 1cac Delete type=0 #157
-2014/03/11-09:49:06.538 1cac Delete type=3 #155
+2014/03/15-10:51:50.736 d00 Recovering log #166
+2014/03/15-10:51:50.737 d00 Level-0 table #169: started
+2014/03/15-10:51:50.740 d00 Level-0 table #169: 6655 bytes OK
+2014/03/15-10:51:50.747 d00 Delete type=0 #166
+2014/03/15-10:51:50.748 d00 Delete type=3 #164

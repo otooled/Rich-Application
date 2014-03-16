@@ -8,40 +8,41 @@
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Site.css" caret="1482" fromTop="17" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="545" fromTop="12" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="690" fromTop="11" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1287" fromTop="27" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="192" fromTop="14" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="0" fromTop="0" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="496" fromTop="18" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="4432" fromTop="314" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="0" fromTop="0" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="320" fromTop="13" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="937" fromTop="24" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="0" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="1121" fromTop="43" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="1133" fromTop="26" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1955" fromTop="21" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="717" fromTop="15" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="19470" fromTop="294" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="537" fromTop="15" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="92155" fromTop="23" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="402" fromTop="26" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1745" fromTop="46" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="283" fromTop="15" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="362" fromTop="13" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="335" fromTop="8" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1335" fromTop="27" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="243" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="1133" fromTop="31" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="179" fromTop="3" />
   </RecentFiles>
   <RecentEdits>
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:NinjectWebCommon.cs" caret="1986" fromTop="13" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="312" fromTop="12" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Site.css" caret="1482" fromTop="17" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="297" fromTop="11" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="702" fromTop="19" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="824" fromTop="12" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="547" fromTop="12" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1287" fromTop="27" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="192" fromTop="14" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="163" fromTop="8" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="1380" fromTop="13" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="10740" fromTop="5" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="2011" fromTop="23" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="19470" fromTop="24" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="717" fromTop="15" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="320" fromTop="13" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="937" fromTop="24" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="1133" fromTop="26" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="92155" fromTop="23" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="179" fromTop="7" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="1467" fromTop="14" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1745" fromTop="28" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="402" fromTop="26" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="362" fromTop="13" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1335" fromTop="28" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="208" fromTop="7" />
   </RecentEdits>
 </RecentFiles>

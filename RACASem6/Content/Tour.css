@@ -4,6 +4,7 @@
     width: 100px;
     position: relative;
     top: auto;
+    color: crimson;
 }
 
 .rowPointer {
@@ -11,5 +12,17 @@
 }
 .mainTableDiv {
     width: 920px;
-    margin-left: 50px;
+    margin-left: 230px;
+    
+}
+.mainTitle {
+    color: crimson;
+    font-size: 22px;
+    font-family: cursive;
+    text-align: center;
+}
+.legsPosition {
+    position: fixed;
+   top: 200px;
+    right: 150px;
 }

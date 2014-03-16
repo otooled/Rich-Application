@@ -1,8 +1,13 @@
-﻿@model IEnumerable<RACASem6.Models.Leg>
+﻿
+@model IEnumerable<RACASem6.Models.Leg>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<script>
+    $(document).ready(function() { toastr.info('There are '+@Model.Count()+' Legs on this trip')});
+</script>
+
 <table>
     <tr>
         <th>
@@ -16,6 +21,9 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.LegFinishDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LegGuests)
         </th>
         <th></th>
     </tr>
@@ -33,6 +41,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.LegFinishDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LegGuests.Count)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.LegId }) |

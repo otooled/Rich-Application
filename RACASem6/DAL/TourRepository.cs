@@ -31,10 +31,14 @@ namespace RACASem6.DAL
         public Trip GetLegsByTripId(int? id)
         {
             Trip t = _ctx.Trips.Find(id);
-            
-
             return t;
-            //return _ctx.Legs.Where(l => l.Trip.TripId == id);
+        }
+
+        public RACASem6.Models.Trip AddTrip(Trip t)
+        {
+            _ctx.Entry(t).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return t;
         }
 
         public void Dispose()

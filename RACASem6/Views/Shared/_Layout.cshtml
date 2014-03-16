@@ -7,33 +7,26 @@
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/mvc/5.0/jquery.validate.unobtrusive.min.js"></script>
     </head>
     <body>
- <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Project name</h3>
-      </div>
+        <div class="container">
+            <div class="header">
+                <h3 class="text-muted">World Adventures </h3>
+            </div>
 
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-      </div>
+            <div class="jumbotron">
+                <div id="greeting" class="mainTitle" >Choose or create your own adventures</div>
+            </div>
 
-       @RenderSection("featured", required: false)
+            @RenderSection("featured", required: false)
             
-                @RenderBody()
+            @RenderBody()
 
-      <div class="footer">
-        <p>&copy; Company 2014</p>
-      </div>
-
-    </div> <!-- /container -->
+        </div>
+        @Scripts.Render("~/bundles/jqueryval")
          @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
        

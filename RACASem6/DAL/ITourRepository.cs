@@ -11,7 +11,8 @@ namespace RACASem6.DAL
     {
         IQueryable<Trip> GetAllTrips();
         Trip GetTripById(int? id);
-      Trip GetLegsByTripId(int? id);
+        Trip GetLegsByTripId(int? id);
+        Trip AddTrip(Trip t);
 
     }
 }
