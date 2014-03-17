@@ -13,6 +13,7 @@ namespace RACASem6.DAL
         Trip GetTripById(int? id);
         Trip GetLegsByTripId(int? id);
         Trip AddTrip(Trip t);
+        Leg AddLeg(Leg l);
 
     }
 }

@@ -41,6 +41,13 @@ namespace RACASem6.DAL
             return t;
         }
 
+        public RACASem6.Models.Leg AddLeg(Leg l)
+        {
+            _ctx.Entry(l).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return l;
+        }
+
         public void Dispose()
         {
             _ctx.Dispose();

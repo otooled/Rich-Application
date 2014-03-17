@@ -23,10 +23,15 @@
 }
 .legsPosition {
     position: fixed;
-   top: 200px;
-    right: 150px;
+   top: 230px;
+    right: 80px;
+   
 }
 .newTripHeading {
     color: green;
     font-family: cursive;
+}
+.image {
+    width: 20px;
+    height: 20px;
 }

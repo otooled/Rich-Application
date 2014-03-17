@@ -1,56 +1,121 @@
 ﻿
 @model IEnumerable<RACASem6.Models.Leg>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <script>
     $(document).ready(function() { toastr.info('There are '+@Model.Count()+' Legs on this trip')});
 </script>
+@*<div class="row">*@
+<p></p>
 
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.StartLocation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FinishLocation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LegStartDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LegFinishDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LegGuests)
-        </th>
-        <th></th>
-    </tr>
+<div class="col-sm-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-7 well-lg well " align="right">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.StartLocation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FinishLocation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LegStartDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LegFinishDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LegGuests.Count)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.LegId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.LegId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.LegId })
-        </td>
-    </tr>
-}
+                <table class="table-condensed table-hover table-striped">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.StartLocation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FinishLocation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LegStartDate)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LegFinishDate)
+                        </th>
+                        <th>Guests
+                        </th>
+                    </tr>
 
-</table>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+
+                                @Html.DisplayFor(modelItem => item.StartLocation)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FinishLocation)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LegStartDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LegFinishDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LegGuests.Count)
+                            </td>
+
+                        </tr>
+                    }
+                    
+                </table>
+                 @Html.ActionLink(" Create a trip leg","CreateLeg","Home",null, new {@class="btn btn-success glyphicon glyphicon-send ", style="margin-top:20px"})
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="row">*@
+@*<div class="col-lg-offset-1 col-sm-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 well-lg well " align="center">*@
+                @*<div class="row">
+    <div class="col-lg-offset-1 col-sm-6">*@
+                @*<h2>Trip Legs</h2>*@
+                @*<h2>Student: @Model.FirstMidName @Model.LastName</h2>*@
+                @*<p class="lead">Trip Details.</p>*@
+
+                @*<div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.StartLocation): </label>
+                    @Html.DisplayFor(model => model.StartLocation)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.FinishLocation): </label>
+                    @Html.DisplayFor(model => model.FinishLocation)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.LegStartDate): </label>
+                    @Html.DisplayFor(model => model.LegStartDate)
+                </div>
+
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.LegFinishDate): </label>
+                    @Html.DisplayFor(model => model.LegFinishDate)
+                </div>
+                
+                <div class="form-group">
+                    <label class="h4">@Html.DisplayNameFor(model => model.LegGuests): </label>
+                    @Html.DisplayFor(model => model.LegGuests.Count)
+                </div>*@
+
+                @* <div class="form-group">
+            <label class="h4"> @Html.DisplayNameFor(model => model.TripNoOfGuests): </label>
+            @Html.DisplayFor(model => model.TripNoOfGuests)
+        </div>*@
+
+
+
+            @*</div>
+        </div>*@
+        @*<div class="col-md-4 spaceIt text-right">
+            <div class="btn-group">
+
+                <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-arrow-left"></i> Back</a>
+
+                @Ajax.ActionLink(" View Trip Legs", "LegsAction", "Home", new { id = Model.TripId },
+                                     new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "LegsPosition" },
+                                     new { @class = "btn btn-success btn-lg"})
+
+            </div>
+        </div>*@
+ @*   </div>
+</div>*@

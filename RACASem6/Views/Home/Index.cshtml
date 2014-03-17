@@ -4,7 +4,8 @@
     ViewBag.Title = "Index";
 }
 <script>
-    $(document).ready(function() { toastr.info(@Model.Count()+' Trips to view')});
+    $(document).ready(function () { toastr.info(@Model.Count()+' Trips to view') });
+   
 </script>
 
 <div class="row">
@@ -23,16 +24,19 @@
                     <th class="tableHead">
                         Finish Date
                     </th>
-                    <th></th>
+                    <th>
+                        
+                    </th>
                 </tr>
 
                 @foreach (var item in Model) {
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.TripName)
+                        
+                        <td >
+                            @Html.DisplayFor(modelItem => item.TripName) 
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.TripStartDate)
+                            @Html.DisplayFor(modelItem => item.TripStartDate) 
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.TripFinishDate)
@@ -41,6 +45,11 @@
                         <td>
                             @Html.ActionLink("Trip Info", "Details", "Home", new { id=item.TripId }, new{@class="btn btn-sm btn-info"}) 
                         </td>
+                        <td>
+                            
+                            @*<img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ireland_%28MODIS%29.jpg/349px-Ireland_%28MODIS%29.jpg"/>*@
+                        </td>
+                        
                     </tr>
                 }
 
