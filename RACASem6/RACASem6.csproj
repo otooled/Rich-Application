@@ -305,6 +305,7 @@
     <Content Include="Scripts\toastr.min.js.map" />
     <Content Include="Views\Home\CreateTrip.cshtml" />
     <Content Include="Views\Home\CreateLeg.cshtml" />
+    <Content Include="Views\Home\AddGuest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

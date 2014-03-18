@@ -39,6 +39,7 @@ namespace RACASem6.Controllers
             return View(trips);
         }
 
+        //List trip legs
         public ActionResult LegsAction(int id)
         {
             Trip t = _repo.GetLegsByTripId(id);
@@ -53,9 +54,6 @@ namespace RACASem6.Controllers
             return View();
         }
 
-        //
-        // POST: /test/Create
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateLeg([Bind(Include = "LegId,StartLocation, FinishLocation,LegStartDate,LegFinishDate")] Leg leg)
@@ -69,12 +67,11 @@ namespace RACASem6.Controllers
             return View(leg);
         }
 
-        // GET: /Trip/Create
+        // Create a trip
         public ActionResult CreateTrip()
         {
             return View("CreateTrip");
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateTrip([Bind(Include = "TripId,TripName, NoOfLegs,TripStartDate,TripFinishDate,TripNoOfGuests")] Trip trip)
@@ -86,6 +83,13 @@ namespace RACASem6.Controllers
             }
             // if not valid, re-send View with already entered data
             return View(trip);
+        }
+
+        //Add a guest to a leg
+
+        public ActionResult AddGuest()
+        {
+            return View(_repo.ListGuest());
         }
         
         protected override void Dispose(bool disposing)

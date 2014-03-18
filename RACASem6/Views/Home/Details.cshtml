@@ -33,14 +33,8 @@
                     <label class="h4">@Html.DisplayNameFor(model => model.TripFinishDate): </label>
                     @Html.DisplayFor(model => model.TripFinishDate)
                 </div>
-
-                @* <div class="form-group">
-            <label class="h4"> @Html.DisplayNameFor(model => model.TripNoOfGuests): </label>
-            @Html.DisplayFor(model => model.TripNoOfGuests)
-        </div>*@
-
-
-
+                 <a href="@Url.Action("AddGuest", "Home")" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-paperclip"></i> Add a guest to this leg</a>
+               
             </div>
         </div>
         <div class="col-md-4 spaceIt text-right">

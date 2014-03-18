@@ -6,6 +6,7 @@ using RACASem6.Models;
 using RACASem6.DAL;
 using System.Data.Entity;
 
+
 namespace RACASem6.DAL
 {
     public class TourRepository:ITourRepository
@@ -15,6 +16,7 @@ namespace RACASem6.DAL
         public TourRepository()
         {
             _ctx = new TourContext();
+            
         }
 
         public IQueryable<RACASem6.Models.Trip> GetAllTrips()
@@ -46,6 +48,13 @@ namespace RACASem6.DAL
             _ctx.Entry(l).State = EntityState.Added;
             _ctx.SaveChanges();
             return l;
+        }
+
+        public IQueryable<RACASem6.Models.Guest> ListGuest()
+        {
+            var q = _ctx.Guests.OrderBy(g => g.FirstName);
+            
+            return q;
         }
 
         public void Dispose()
