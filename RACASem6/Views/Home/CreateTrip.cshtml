@@ -5,9 +5,9 @@
 }
 @section Scripts {
     <script>
-        // call toastr on load
+
         $(function () {
-            toastr.warning('Creating a new Student record');
+            toastr.warning('Creating a new Trip');
         })
     </script>
 }
@@ -21,32 +21,33 @@
                     {
                         @Html.AntiForgeryToken()
                         @Html.ValidationSummary(true)
-                        <h3 >Create a new Trip</h3>
+                        <h3>Create a new Trip</h3>
                         <h4 class="newTripHeading">Enter a trip name with a start and finish date.</h4>
                         <div class="row">
                             <div class="col-xs-6 col-md-6 spaceIt">
                                 @Html.TextBoxFor(model => model.TripName, new { @class = "input-lg form-control", placeholder = "Trip name" })
                                 @Html.ValidationMessageFor(model => model.TripName)
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 spaceIt">
+                                @Html.TextBoxFor(model => model.TripStartDate, new { @class = "input-lg form-control", placeholder = "Start date" })
+                                @Html.ValidationMessageFor(model => model.TripStartDate)
                             </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-md-6 spaceIt">
-                                    @Html.TextBoxFor(model => model.TripStartDate, new {@class="input-lg form-control", placeholder = "Start date" })
-                                    @Html.ValidationMessageFor(model => model.TripStartDate)
-                                </div>
-                            </div>
+                        </div>
                             
                         <div class="row">
                             <div class="col-xs-6 col-md-6 spaceIt">
-                                
-                                @Html.TextBoxFor(model=>model.TripFinishDate, 
-                                        new {@class="form-control input-lg",
-                                             placeholder = "Finsh date"
+
+                                @Html.TextBoxFor(model => model.TripFinishDate,
+                                        new
+                                        {
+                                            @class = "form-control input-lg",
+                                            placeholder = "Finsh date"
                                         })
                                 @Html.ValidationMessageFor(model => model.TripFinishDate)
                             </div>
                             <div class="col-xs-6 col-md-6 spaceIt text-center">
-                                
                             </div>
                         </div>
                     }
@@ -54,11 +55,11 @@
             </div>
             <div class="col-xs-6 col-md-6 spaceIt text-right">
                 <div class="btn-group">
-                                    <a href="@Url.Action("Index","Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-remove-circle"></i> Cancel</a>
-                                    <button type="submit" class="btn btn-success btn-lg">
-                                        <i class="glyphicon glyphicon-thumbs-up"></i> Create Trip</button>
-                                </div>
-                
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-remove-circle"></i> Cancel</a>
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="glyphicon glyphicon-thumbs-up"></i> Create Trip</button>
+                </div>
+
             </div>
         </div>
 

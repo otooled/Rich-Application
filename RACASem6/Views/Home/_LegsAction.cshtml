@@ -1,11 +1,10 @@
-﻿
-@model IEnumerable<RACASem6.Models.Leg>
+﻿@model IEnumerable<RACASem6.Models.Leg>
 
 
 <script>
-    $(document).ready(function() { toastr.info('There are '+@Model.Count()+' Legs on this trip')});
+    $(document).ready(function () { toastr.info('There are ' +@Model.Count() +' Legs on this trip') });
 </script>
-@*<div class="row">*@
+
 <p></p>
 
 <div class="col-sm-8">
@@ -53,9 +52,9 @@
 
                         </tr>
                     }
-                    
+
                 </table>
-                 @Html.ActionLink(" Create a trip leg","CreateLeg","Home",null, new {@class="btn btn-success glyphicon glyphicon-send ", style="margin-top:20px"})
+                @Html.ActionLink(" Create a trip leg", "CreateLeg", "Home", null, new { @class = "btn btn-success glyphicon glyphicon-send ", style = "margin-top:20px" })
             </div>
         </div>
     </div>

@@ -9,54 +9,50 @@
 </script>
 
 <div class="row">
-    <div class="col-lg-offset-1 col-sm-6" >
+    <div class="col-lg-offset-1 col-sm-6">
         <h2 class="newTripHeading" align="center">Trips</h2>
-        @*<p class="lead"></p>*@
+       
         <div class="mainTableDiv">
             <table class="table-striped table-hover">
                 <tr>
-                    <th class="tableHead">
-                        Trip Name
+                    <th class="tableHead">Trip Name
                     </th>
-                    <th class="tableHead">
-                        Start Date
+                    <th class="tableHead">Start Date
                     </th>
-                    <th class="tableHead">
-                        Finish Date
+                    <th class="tableHead">Finish Date
                     </th>
-                    <th>
-                        
-                    </th>
+                    <th></th>
                 </tr>
 
-                @foreach (var item in Model) {
+                @foreach (var item in Model)
+                {
                     <tr>
-                        
-                        <td >
-                            @Html.DisplayFor(modelItem => item.TripName) 
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TripName)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.TripStartDate) 
+                            @Html.DisplayFor(modelItem => item.TripStartDate)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.TripFinishDate)
                         </td>
-        
+
                         <td>
-                            @Html.ActionLink("Trip Info", "Details", "Home", new { id=item.TripId }, new{@class="btn btn-sm btn-info"}) 
+                            @Html.ActionLink("Trip Info", "Details", "Home", new { id = item.TripId }, new { @class = "btn btn-sm btn-info" })
                         </td>
                         <td>
-                            
+
                             @*<img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ireland_%28MODIS%29.jpg/349px-Ireland_%28MODIS%29.jpg"/>*@
                         </td>
-                        
+
                     </tr>
                 }
 
             </table>
-             @Html.ActionLink(" Create your own Trip","CreateTrip","Home",null, new {@class="btn btn-success glyphicon glyphicon-plane ", style="margin-top:20px"})
+            @Html.ActionLink(" Create your own Trip", "CreateTrip", "Home", null, new { @class = "btn btn-success glyphicon glyphicon-plane ", style = "margin-top:20px" })
         </div>
-      
+
     </div>
-    @*, style="margin-bottom:10px"*@
+   
 </div>

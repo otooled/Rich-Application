@@ -1,3 +1,21 @@
-﻿@model RACASem6.Models.Guest
+﻿@model IEnumerable<RACASem6.Models.Guest>
+@section Scripts {
+    <script>
 
+        $(function () {
+            toastr.warning('Guest added');
+        })
+    </script>
+}
+
+<div class="col-sm-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-7 well-lg well " align="right">
+                <h4 class="newTripHeading" align="right">Guest successfully added to trip leg</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-exclamation-sign"></i> Ok</a>
 

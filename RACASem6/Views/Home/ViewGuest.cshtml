@@ -1,42 +1,46 @@
 ﻿@model IEnumerable<RACASem6.Models.Guest>
 <script>
-function AddGuest(gstId) {
-            $.ajax({
-                url: '@Url.Action("AddGuest")',
-                data: { id: gstId },
-                success: function (data) {
-                    $('#tblGuestDets').html(data);
-                    
-                }
-            });
-    $(this).toggleClass('success');
-}
-    </script>
+    function AddGuest(gstId) {
+        $.ajax({
+            url: '@Url.Action("AddGuest")',
+            data: { id: gstId },
+            success: function (data) {
+                $('#tblGuestDets').html(data);
+            }
+        });
+        $(this).toggleClass('success');
+    }
+</script>
+<script>
+    $(document).ready(function () { toastr.info(@Model.Count()+' Guests available') });
+   
+</script>
 
 <div class="row">
-    <div class="col-lg-offset-1 col-sm-6" >
-        <h2 class="newTripHeading" align="center">Available guests</h2>
+    <div class="col-lg-offset-1 col-sm-6">
+        <h2 class="newTripHeading" align="right">Click on a guest to add to leg</h2>
         <div class="mainTableDiv">
-<table id="tblGuestDets">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th></th>
-    </tr>
+            <table id="tblGuestDets" class="table-striped table-hover">
+                <tr>
+                    <th class="tableHead">
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </th>
+                    <th></th>
+                </tr>
 
-@foreach (var item in Model) {
-    <tr onclick="AddGuest('gstId')" style="cursor: pointer">
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-    </tr>
-}
+                @foreach (var item in Model)
+                {
+                    <tr onclick="AddGuest('gstId')" style="cursor: pointer">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                    </tr>
+                }
 
-</table>
-
+            </table>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-remove-sign"></i> Cancel</a>
         </div>
-      
+
     </div>
-    @*, style="margin-bottom:10px"*@
+
 </div>

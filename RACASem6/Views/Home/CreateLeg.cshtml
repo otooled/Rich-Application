@@ -2,9 +2,9 @@
 
 @section Scripts {
     <script>
-        // call toastr on load
+
         $(function () {
-            toastr.warning('Creating a new Student record');
+            toastr.warning('Creating a new a new trip leg');
         })
     </script>
 }
@@ -18,34 +18,38 @@
                     {
                         @Html.AntiForgeryToken()
                         @Html.ValidationSummary(true)
-                        <h3 >Create a new Leg</h3>
+                        <h3>Create a new Leg</h3>
                         <h4 class="newTripHeading">Enter leg details for trip</h4>
                         <div class="row">
                             <div class="col-xs-6 col-md-6 spaceIt">
                                 @Html.TextBoxFor(model => model.StartLocation, new { @class = "input-lg form-control", placeholder = "Start location" })
                                 @Html.ValidationMessageFor(model => model.StartLocation)
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 spaceIt">
+                                @Html.TextBoxFor(model => model.FinishLocation, new { @class = "input-lg form-control", placeholder = "Finish location" })
+                                @Html.ValidationMessageFor(model => model.FinishLocation)
                             </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-md-6 spaceIt">
-                                    @Html.TextBoxFor(model => model.FinishLocation, new {@class="input-lg form-control", placeholder = "Finish location" })
-                                    @Html.ValidationMessageFor(model => model.FinishLocation)
-                                </div>
-                            </div>
+                        </div>
                             
                         <div class="row">
                             <div class="col-xs-6 col-md-6 spaceIt">
-                                
-                                @Html.TextBoxFor(model=>model.LegStartDate, 
-                                        new {@class="form-control input-lg",
-                                             placeholder = "Start date"
+
+                                @Html.TextBoxFor(model => model.LegStartDate,
+                                        new
+                                        {
+                                            @class = "form-control input-lg",
+                                            placeholder = "Start date"
                                         })
                                 @Html.ValidationMessageFor(model => model.LegFinishDate)
                             </div>
                             <div class="col-xs-6 col-md-6 spaceIt text-center">
-                                 @Html.TextBoxFor(model=>model.LegFinishDate, 
-                                        new {@class="form-control input-lg",
-                                             placeholder = "Finish date"
+                                @Html.TextBoxFor(model => model.LegFinishDate,
+                                        new
+                                        {
+                                            @class = "form-control input-lg",
+                                            placeholder = "Finish date"
                                         })
                                 @Html.ValidationMessageFor(model => model.LegFinishDate)
                             </div>
@@ -55,17 +59,15 @@
             </div>
             <div class="col-xs-6 col-md-6 spaceIt text-right">
                 <div class="btn-group">
-                                    <a href="@Url.Action("Index","Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-remove-circle"></i> Cancel</a>
-                                    <button type="submit" class="btn btn-success btn-lg">
-                                        <i class="glyphicon glyphicon-thumbs-up"></i> Create Leg</button>
-                                </div>
-                
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-remove-circle"></i> Cancel</a>
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="glyphicon glyphicon-thumbs-up"></i> Create Leg</button>
+                </div>
+
             </div>
         </div>
 
     </div>
 </div>
 
-@*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@
+

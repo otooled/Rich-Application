@@ -12,6 +12,7 @@ namespace RACASem6.Controllers
 {
     public class HomeController : Controller
     {
+
         private ITourRepository _repo;
 
         public HomeController(ITourRepository repo)
@@ -19,11 +20,13 @@ namespace RACASem6.Controllers
             _repo = repo;
         }
 
+        //Display all trips
         public ActionResult Index()
         {
             return View(_repo.GetAllTrips());
         }
 
+        //Display trip details
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -92,9 +95,16 @@ namespace RACASem6.Controllers
             return View(_repo.ListGuest());
         }
 
+        //Add guest to leg
         public ActionResult AddGuest()
         {
             return View("AddGuest");
+        }
+
+        //Check leg viability
+        public  ActionResult CheckLegViability()
+        {
+            return PartialView("_CheckLegViability");
         }
         
         protected override void Dispose(bool disposing)

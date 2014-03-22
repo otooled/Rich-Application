@@ -6,52 +6,55 @@
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:WebApiConfig.cs" caret="0" fromTop="0" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Global.asax.cs" caret="0" fromTop="0" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Site.css" caret="1482" fromTop="17" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="545" fromTop="12" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="690" fromTop="11" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="496" fromTop="18" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="1077" fromTop="26" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1359" fromTop="28" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="107247" fromTop="10" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="383" fromTop="4" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="751" fromTop="19" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateTrip.cshtml" caret="2470" fromTop="9" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="283" fromTop="15" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="270" fromTop="11" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:TourAPIController.cs" caret="0" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Contact.cshtml" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_CheckLegViability.cshtml" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="437" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="343" fromTop="14" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="236" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="240" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="2036" fromTop="75" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:TourAPIController.cs" caret="814" fromTop="32" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="669" fromTop="20" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="591" fromTop="13" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:ViewGuest.cshtml" caret="1432" fromTop="16" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="505" fromTop="18" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="1821" fromTop="24" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1501" fromTop="9" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="2319" fromTop="34" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateLeg.cshtml" caret="3094" fromTop="17" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:AddGuest.cshtml" caret="32" fromTop="2" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="2565" fromTop="19" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:ViewGuest.cshtml" caret="964" fromTop="22" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateTrip.cshtml" caret="2898" fromTop="22" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateLeg.cshtml" caret="3158" fromTop="16" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:AddGuest.cshtml" caret="619" fromTop="19" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="2656" fromTop="21" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="0" fromTop="0" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="0" fromTop="0" />
   </RecentFiles>
   <RecentEdits>
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:NinjectWebCommon.cs" caret="1986" fromTop="13" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Site.css" caret="1482" fromTop="17" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="297" fromTop="11" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/f:Web.config" caret="824" fromTop="12" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="547" fromTop="12" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="19470" fromTop="24" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="937" fromTop="24" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="362" fromTop="13" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Shared/f:_Layout.cshtml" caret="1077" fromTop="24" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:App_Start/f:BundleConfig.cs" caret="1359" fromTop="28" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:bootstrap.css" caret="107247" fromTop="10" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateTrip.cshtml" caret="3048" fromTop="23" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="991" fromTop="4" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Content/f:Tour.css" caret="383" fromTop="4" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateLeg.cshtml" caret="2992" fromTop="27" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="270" fromTop="11" />
     <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:ITourRepository.cs" caret="505" fromTop="18" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="1821" fromTop="24" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1501" fromTop="9" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="2319" fromTop="0" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="2554" fromTop="16" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:AddGuest.cshtml" caret="32" fromTop="2" />
-    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:ViewGuest.cshtml" caret="940" fromTop="20" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:TourAPIController.cs" caret="814" fromTop="12" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Controllers/f:HomeController.cs" caret="2656" fromTop="21" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Index.cshtml" caret="327" fromTop="12" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:_LegsAction.cshtml" caret="2288" fromTop="29" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Trip.cs" caret="993" fromTop="27" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:LegGuest.cs" caret="518" fromTop="20" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Leg.cs" caret="236" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Models/f:Guest.cs" caret="240" fromTop="11" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourRepository.cs" caret="2143" fromTop="18" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:DAL/f:TourContext.cs" caret="591" fromTop="13" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Migrations/f:Configuration.cs" caret="669" fromTop="20" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:ViewGuest.cshtml" caret="1432" fromTop="22" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateTrip.cshtml" caret="2898" fromTop="22" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:CreateLeg.cshtml" caret="3158" fromTop="16" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:AddGuest.cshtml" caret="619" fromTop="19" />
+    <File id="FDADBE7A-237B-41DB-ABEE-CE2C0A60CDFD/d:Views/d:Home/f:Details.cshtml" caret="1522" fromTop="13" />
   </RecentEdits>
 </RecentFiles>

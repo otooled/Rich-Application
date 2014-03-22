@@ -15,10 +15,10 @@ namespace RACASem6.Migrations
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
         }
-       
+
         protected override void Seed(RACASem6.DAL.TourContext context)
         {
-             if (context.Trips.Count() < 1)
+            if (context.Trips.Count() < 1)// stops the database being added with repeating data from seed method
             {
                 //Add trips to database
                 var trips = new List<Trip>

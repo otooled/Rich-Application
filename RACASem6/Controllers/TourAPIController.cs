@@ -4,36 +4,44 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Mvc;
+using RACASem6.DAL;
+using RACASem6.Models;
 
 namespace RACASem6.Controllers
 {
     public class TourAPIController : ApiController
     {
-        // GET api/tourapi
-        public IEnumerable<string> Get()
+        private ITourRepository _repo;
+
+        public TourAPIController(ITourRepository repo)
         {
-            return new string[] { "value1", "value2" };
+            _repo = repo;
+        }
+        public IEnumerable<Trip>GetAllTrips() 
+        {
+            return _repo.GetAllTrips();
         }
 
-        // GET api/tourapi/5
-        public string Get(int id)
+        public Trip GetLeg(int id)
         {
-            return "value";
+            var trip = _repo.GetTripById(id);
+            if (trip == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            return trip;
         }
 
-        // POST api/tourapi
-        public void Post([FromBody]string value)
+        public HttpResponseMessage PostProduct(Trip trp)
         {
+            trp = _repo.AddTrip(trp);
+            var response = Request.CreateResponse<Trip>(HttpStatusCode.Created, trp);
+
+            string uri = Url.Link("DefaultApi", new { id = trp.TripId });
+            response.Headers.Location = new Uri(uri);
+            return response;
         }
 
-        // PUT api/tourapi/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/tourapi/5
-        public void Delete(int id)
-        {
-        }
     }
 }
