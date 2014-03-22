@@ -57,6 +57,22 @@ namespace RACASem6.DAL
             return q;
         }
 
+        public RACASem6.Models.Guest AddGuest(Guest g)
+        {
+            _ctx.Entry(g).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return g;
+
+        }
+
+        public IQueryable<RACASem6.Models.Leg> CheckTripViability(int id = 0)
+        {
+            var tripV = from tv in _ctx.Legs
+                        where tv.LegGuests.Count >= 3
+                        select tv;
+            return tripV;
+
+        }
         public void Dispose()
         {
             _ctx.Dispose();

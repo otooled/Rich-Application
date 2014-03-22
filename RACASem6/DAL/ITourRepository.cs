@@ -15,6 +15,8 @@ namespace RACASem6.DAL
         Trip AddTrip(Trip t);
         Leg AddLeg(Leg l);
         IQueryable<Guest> ListGuest();
+        Guest AddGuest(Guest g);
+        IQueryable<Leg> CheckTripViability(int id);
 
     }
 }

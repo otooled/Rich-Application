@@ -162,6 +162,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\TourAPIController.cs" />
     <Compile Include="DAL\ITourRepository.cs" />
     <Compile Include="DAL\TourRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -305,6 +306,7 @@
     <Content Include="Scripts\toastr.min.js.map" />
     <Content Include="Views\Home\CreateTrip.cshtml" />
     <Content Include="Views\Home\CreateLeg.cshtml" />
+    <Content Include="Views\Home\ViewGuest.cshtml" />
     <Content Include="Views\Home\AddGuest.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -1,33 +1,3 @@
-﻿@model IEnumerable<RACASem6.Models.Guest>
+﻿@model RACASem6.Models.Guest
 
-@{
-    ViewBag.Title = "AddGuest";
-}
 
-<h2>AddGuest</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GuestId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GuestId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GuestId })
-        </td>
-    </tr>
-}
-
-</table>

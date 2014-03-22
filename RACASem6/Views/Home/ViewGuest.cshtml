@@ -1,0 +1,42 @@
+﻿@model IEnumerable<RACASem6.Models.Guest>
+<script>
+function AddGuest(gstId) {
+            $.ajax({
+                url: '@Url.Action("AddGuest")',
+                data: { id: gstId },
+                success: function (data) {
+                    $('#tblGuestDets').html(data);
+                    
+                }
+            });
+    $(this).toggleClass('success');
+}
+    </script>
+
+<div class="row">
+    <div class="col-lg-offset-1 col-sm-6" >
+        <h2 class="newTripHeading" align="center">Available guests</h2>
+        <div class="mainTableDiv">
+<table id="tblGuestDets">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr onclick="AddGuest('gstId')" style="cursor: pointer">
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+    </tr>
+}
+
+</table>
+
+        </div>
+      
+    </div>
+    @*, style="margin-bottom:10px"*@
+</div>

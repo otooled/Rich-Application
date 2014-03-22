@@ -85,11 +85,16 @@ namespace RACASem6.Controllers
             return View(trip);
         }
 
-        //Add a guest to a leg
+        //View list of available guests to add to a leg
+
+        public ActionResult ViewGuest()
+        {
+            return View(_repo.ListGuest());
+        }
 
         public ActionResult AddGuest()
         {
-            return View(_repo.ListGuest());
+            return View("AddGuest");
         }
         
         protected override void Dispose(bool disposing)
